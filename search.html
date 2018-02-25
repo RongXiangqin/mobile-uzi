@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>搜索</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<!--<link rel="icon" type="image/png" href="i/favicon.png">-->
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<!--<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<!--<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/search.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	</head>
+
+	<body>
+		<!--顶部-->
+		<header data-am-widget="header" class="am-header  mycolor">
+			<div class="am-header-left am-header-nav">
+				<div class="back1">
+					<a href="javascript:;" onClick="history.back();"><i class="am-icon-angle-left"></i></a>
+				</div>
+				<div class="am-header-right am-form-icon home-search-box">
+					<i class="am-icon-search"></i>
+					<input type="text" class="am-form-field home-search" placeholder="搜索目的地/景点">
+				</div>
+			</div>
+			
+		</header>
+		<!--目的地列表-->
+		<div class="am-container">
+			<div class="s-title">
+				热门目的地
+			</div>
+			
+			<div class="am-g">
+				<div class="am-u-sm-3 ">
+					<span class="s-country">欧洲</span>
+				</div>
+				<div class="am-u-sm-3">
+					<span class="s-country">日本</span>
+				</div>
+				<div class="am-u-sm-3">
+					<span class="s-country">东欧</span>
+				</div>
+				<div class="am-u-sm-3">
+					<span class="s-country">俄罗斯</span>
+				</div>
+				
+			</div>
+			<div class="am-g">
+				<div class="am-u-sm-3 ">
+					<span class="s-country">北欧</span>
+				</div>
+				<div class="am-u-sm-3">
+					<span class="s-country">一价全含</span>
+				</div>
+				<div class="am-u-sm-3">
+					<span class="s-country">泰国</span>
+				</div>
+				<div class="am-u-sm-3">
+					<span class="s-country">巴厘岛</span>
+				</div>
+				
+			</div>
+			<div class="am-g">
+				<div class="am-u-sm-3 ">
+					<span class="s-country">美国</span>
+				</div>
+				<div class="am-u-sm-3">
+					<span class="s-country">土耳其</span>
+				</div>
+				<div class="am-u-sm-3">
+					<span class="s-country">普吉岛</span>
+				</div>
+				<div class="am-u-sm-3">
+					<span class="s-country">西班牙</span>
+				</div>
+				
+			</div>
+			<div class="am-g">
+				<div class="am-u-sm-3 ">
+					<span class="s-country">台湾</span>
+				</div>
+				<div class="am-u-sm-3">
+					<span class="s-country">美国</span>
+				</div>
+				<div class="am-u-sm-3">
+					<span class="s-country">澳大利亚</span>
+				</div>
+				<div class="am-u-sm-3">
+					<span class="s-country">云南</span>
+				</div>
+				
+			</div>
+			
+		</div>
+
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<!--<script src="js/jquery.min.js"></script>-->
+	<!--<![endif]-->
+	<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+	<script src="js/amazeui.min.js"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var a=window.screen.width-85;
+		console.log(a)
+		$(".home-search").css("width",a);
+		$(".s-country").click(function () {
+			location.href="teamtravel.html"
+		})
+	</script>
+
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>选择出行日期</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<!--<link rel="icon" type="image/png" href="i/favicon.png">-->
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<!--<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<!--<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/datechoose.css" />
+		<link rel="stylesheet" type="text/css" href="css/yzfonts.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	</head>
+
+	<body>
+		<div id="box">
+			<!--顶部-->
+			<div class="top">
+				<!--返回-->
+				<div class="back1">
+					<a href="javascript:;" onClick="history.back();"><i class="am-icon-angle-left"></i></a>
+				</div>
+				<span>选择日期</span>
+
+			</div>
+
+			<!--月份-->
+			<div class="date-bg">
+				<div class="month-10">
+					10月
+				</div>
+				<div class="month-11">
+					11月
+				</div>
+				<div class="d-bg1">10</div>
+				<div class="d-bg2">月<br />&nbsp;&nbsp;&nbsp;2017</div>
+			</div>
+			<!--星期-->
+			<div class="am-container">
+				<div class="day-box">
+					<div class="sanjiao">
+
+					</div>
+					<ul class="am-avg-sm-7 boxes">
+						<li class="day-r">日</li>
+						<li class="">一</li>
+						<li class="">二</li>
+						<li class="">三</li>
+						<li class="">四</li>
+						<li class="">五</li>
+						<li class="day-r">六</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="am-container bg">
+
+				<!--日期-->
+				<div class="day-b2 mo-10">
+					<ul class="am-avg-sm-7 boxes">
+						<li class="">
+							1
+							<p class="d-price"></p>
+						</li>
+						<li class="">2</li>
+						<li class="">3</li>
+						<li class="">4</li>
+						<li class="">5</li>
+						<li class="">6</li>
+						<li class="">7</li>
+					</ul>
+					<ul class="am-avg-sm-7 boxes">
+						<li class="">
+							8
+							<p class="d-price"></p>
+						</li>
+						<li class="">9</li>
+						<li class=""><span class="today">今天</span></li>
+						<li class="">明天</li>
+						<li class="">后天</li>
+						<li class="">13</li>
+						<li class="">14</li>
+					</ul>
+					<ul class="am-avg-sm-7 boxes">
+						<li class="">
+							15
+							<p class="d-price"></p>
+						</li>
+						<li class="">16</li>
+						<li class="">17</li>
+						<li class="">18</li>
+						<li class="">19</li>
+						<li class="">20</li>
+						<li class="">21</li>
+					</ul>
+					<ul class="am-avg-sm-7 boxes">
+						<li class="">
+							22
+							<p class="d-price"></p>
+						</li>
+						<li class="">23</li>
+						<li class="">24</li>
+						<li class="">25</li>
+						<li class="">26</li>
+						<li class="">27</li>
+						<li class="">28</li>
+					</ul>
+					<ul class="am-avg-sm-7 boxes">
+						<li class="">
+							<span class="goda ">29</span>
+							<p class="d-price"></p>
+						</li>
+						<li class=""><span class="goda">30</span></li>
+						<li class=""> <span class="goday day-col ">31</span>
+							<p class="d-price  day-col">￥{{list.pricereally}}</p>
+						</li>
+
+					</ul>
+				</div>
+				<div class="day-b2 mo-11">
+					<ul class="am-avg-sm-7 boxes">
+						<li class="">
+							&nbsp;
+							<p class="d-price"></p>
+						</li>
+						<li class="">&nbsp;</li>
+						<li class="">&nbsp;</li>
+						<li class="">1</li>
+						<li class="">2</li>
+						<li class="">3</li>
+						<li class="">4</li>
+					</ul>
+					<ul class="am-avg-sm-7 boxes">
+						<li class="">
+							5
+							<p class="d-price"></p>
+						</li>
+						<li class="">6</li>
+						<li class="">7</li>
+						<li class="">8</li>
+						<li class=""><span class="goday day-col ">9</span>
+							<p class="d-price  day-col">￥{{list.pricereally}}</p>
+						</li>
+						<li class="">10</li>
+						<li class="">11</li>
+					</ul>
+					<ul class="am-avg-sm-7 boxes">
+						<li class="">
+							12
+							<p class="d-price"></p>
+						</li>
+						<li class="">13</li>
+						<li class="">14</li>
+						<li class="">15</li>
+						<li class="">16</li>
+						<li class="">17</li>
+						<li class=""><span class="goday day-col ">18</span>
+							<p class="d-price  day-col">￥{{list.pricereally}}</p>
+						</li>
+					</ul>
+					<ul class="am-avg-sm-7 boxes">
+						<li class="">
+							<span class="goday day-col ">19</span>
+							<p class="d-price  day-col">￥{{list.pricereally}}</p>
+						</li>
+						<li class="">20</li>
+						<li class="">21</li>
+						<li class="">22</li>
+						<li class="">23</li>
+						<li class="">24</li>
+						<li class=""><span class="goday day-col ">25</span>
+							<p class="d-price  day-col">￥{{list.pricereally}}</p>
+						</li>
+					</ul>
+					<ul class="am-avg-sm-7 boxes">
+						<li class="">
+							<span class="goda ">26</span>
+							<p class="d-price"></p>
+						</li>
+						<li class=""><span class="goda">37</span></li>
+						<li class=""> 28
+
+						</li>
+						<li class="">29</li>
+						<li class="">30</li>
+
+					</ul>
+
+				</div>
+			</div>
+
+			<!--优惠活动-->
+			<div class="am-container ">
+				<div class="dis-bg">
+
+					<div class="t-y">
+						<i class="iconfont icon-discount-m t-y1"></i>&nbsp;优惠活动
+						<a href="#" class="t-y2" style="float: right;">
+							<span>4</span> &gt;
+						</a>
+					</div>
+					<!--同行优惠-->
+					<div class="tt-y">
+						<p class="tt-y1"><span>同行优惠</span>多人多惠</p>
+						<p class="tt-y1"><span>送积分</span>预订此线路将获得积分赠送</p>
+
+					</div>
+				</div>
+			</div>
+			<!--出行人数-->
+
+			<div class="am-container ">
+				<div class="dis-bg2">
+
+					<div class="t-y">
+						<i class="iconfont icon-peoples t-y1"></i>&nbsp;选择出行人数
+
+					</div>
+					<!--同行优惠-->
+					<div class="tt-y">
+						<div class="tt-y3">
+							<div class="fl">
+
+								<span>成人</span>&nbsp;&nbsp;&nbsp;<span class="peo-1">?</span>&nbsp;&nbsp;&nbsp;<span class="peo-2">￥{{list.pricereally}}</span>/人
+							</div>
+							<div class="of-a fr">
+								<div class="of-remove  fl">
+									<i class="iconfont icon-jianhao of-a1"></i>
+								</div>
+								<div class="of-count fl" id="count1">
+									1
+								</div>
+								<div class="of-add active fl">
+									<i class="iconfont icon-jiahao  of-a2 "></i>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear">
+
+							</div>
+						</div>
+						<div class="tt-y3">
+							<div class="fl">
+
+								<span>儿童</span>&nbsp;&nbsp;&nbsp;<span class="peo-0">&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;<span class="peo-2">￥{{list.pricereally*0.8}}</span>/人
+							</div>
+							<div class="of-a fr">
+								<div class="of-remove fl">
+									<i class="iconfont icon-jianhao of-a1"></i>
+								</div>
+								<div class="of-count fl" id="count2">
+									0
+								</div>
+								<div class="of-add active fl">
+									<i class="iconfont icon-jiahao  of-a2"></i>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear">
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!--底部-->
+			<div class="bottom-1">
+				<span class="p-choose">请选择出游团期</span>
+				<div class="date-next fr">
+					下一步
+				</div>
+			</div>
+
+			<div class="bottom-2" id="btom2">
+				<span class="p-choose">团期&nbsp;:&nbsp;<span class="date-c">2017-10-31</span><span class="date-lei">C</span>&nbsp;行程</span>
+				<a :href="href3+list._id">
+					<div class="date-next2 fr" @click="price">
+						下一步
+					</div>
+				</a>
+			</div>
+		</div>
+
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<!--<script src="js/jquery.min.js"></script>-->
+	<!--<![endif]-->
+	<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+	<script src="js/amazeui.min.js"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/axios.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#box",
+			data: {
+				href3: "../mobile/orderform.html?_id=",
+				list: []
+			},
+			methods: {
+				price: function() {
+
+					var n1 = parseInt($("#count1").text());
+					var n2 = parseInt($("#count2").text());
+					var id = GetRequest()._id;
+					var orderdate=$(".date-c").text();
+					var price = this.list.pricereally * n1 + parseInt(this.list.pricereally * 0.8 * n2)
+					var data = "price=" + price +"&people=" +n1+"&child=" +n2+"&id=" + id+"&date="+orderdate;
+					console.log(data);
+					$.post('/users/orderPrice/', data, function(result) {
+							if(result.status){
+								alert(result.msg)
+							}
+						});
+					
+				}
+			},
+			mounted: function() {
+
+				//获取参数id
+				var id = GetRequest()._id;
+				//axios方法
+				axios.get('/users/getGoodsById/?_id=' + id).then(function(response) {
+					app.list = response.data.data;
+					console.log(app.list)
+				});
+
+				//JQ方法
+				//				$.get("/users/getGoodsById/?_id=" + id, function(result) {
+				//					app.list = result.data;
+				//
+				//				});
+
+			},
+			//			updated:function () {
+			//				$(".am-slider").flexslider({
+			//					animation:"slide",
+			//					slideshow:false
+			//				})
+			//			}
+		})
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".goday").click(function() {
+				$(".goday").removeClass("day-active");
+				$(".goday").siblings(".d-price").removeClass("d-active");
+				$(this).addClass("day-active");
+				$(this).siblings(".d-price").addClass("d-active");
+				$(".dis-bg").css("display", "block");
+				$(".dis-bg2").css("display", "block");
+				$(".bottom-1").css("display", "none");
+				$(".bottom-2").css("display", "block");
+			});
+			//月份切换
+			$(".month-11").click(function() {
+				$(".d-bg1").text("11");
+				$(this).css("display", "none");
+				$(".month-10").css("display", "block");
+				$(".mo-11").css("display", "block");
+				$(".mo-10").css("display", "none");
+			});
+			$(".month-10").click(function() {
+				$(".d-bg1").text("10");
+				$(this).css("display", "none");
+				$(".month-11").css("display", "block");
+				$(".mo-10").css("display", "block");
+				$(".mo-11").css("display", "none");
+			})
+			//日期在底部的显示
+			$(".goday").eq(0).click(function() {
+				$(".date-c").text("2017-10-31 ")
+			});
+			$(".goday").eq(1).click(function() {
+				$(".date-c").text("2017-11-09 ")
+			})
+			$(".goday").eq(2).click(function() {
+				$(".date-c").text("2017-11-18 ")
+			})
+			$(".goday").eq(3).click(function() {
+				$(".date-c").text("2017-11-19 ")
+			})
+			$(".goday").eq(4).click(function() {
+				$(".date-c").text("2017-11-25 ")
+			})
+
+			$(".of-add").click(function() {
+
+				var a = parseInt($(this).siblings(".of-count").text());
+				a++;
+				$(this).siblings(".of-count").text(a);
+				$(this).siblings(".of-remove").addClass("active");
+				$(this).siblings(".of-remove").find(".of-a1").css("color", "#ff3a5f");
+				$(this).siblings(".of-remove").removeClass("m-act")
+				$(this).addClass("m-act");
+				$(this).find(".of-a2").css("color", "white")
+
+			});
+			$(".of-remove").eq(0).click(function() {
+
+				var a = parseInt($(this).siblings(".of-count").text());
+				a--;
+				if(a < 1) {
+					$(this).removeClass("m-act");
+					$(this).removeClass("active");
+					$(this).find(".of-a1").css("color", "#CCCCCC")
+					alert("已达到最小选择人数");
+				} else {
+					$(this).siblings(".of-count").text(a);
+					$(this).siblings(".of-add").addClass("active");
+					$(this).siblings(".of-add").removeClass("m-act")
+					$(this).siblings(".of-add").find(".of-a2").css("color", "#ff3a5f");
+					$(this).addClass("m-act");
+					$(this).find(".of-a1").css("color", "white")
+				}
+
+			})
+			$(".of-remove").eq(1).click(function() {
+
+				var a = parseInt($(this).siblings(".of-count").text());
+				a--;
+				if(a < 0) {
+					$(this).removeClass("m-act");
+					$(this).removeClass("active");
+					$(this).find(".of-a1").css("color", "#CCCCCC")
+
+				} else {
+					$(this).siblings(".of-count").text(a);
+					$(this).siblings(".of-add").addClass("active");
+					$(this).siblings(".of-add").removeClass("m-act")
+					$(this).siblings(".of-add").find(".of-a2").css("color", "#ff3a5f");
+					$(this).addClass("m-act");
+					$(this).find(".of-a1").css("color", "white")
+				}
+
+			})
+
+		})
+	</script>
+
+</html>

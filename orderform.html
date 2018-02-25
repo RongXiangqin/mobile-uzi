@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>订单1</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<!--<link rel="icon" type="image/png" href="i/favicon.png">-->
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<!--<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<!--<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/orderform.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	</head>
+
+	<body>
+		<div id="box">
+			<!--顶部-->
+			<div class="top">
+				<div class="back1">
+					<a href="javascript:;" onClick="history.back();"><i class="iconfont icon-back"></i></a>
+				</div>
+				<span>1/2填写订单</span>
+				<!--联系-->
+				<div class="detail1 m-list">
+					<a href="index.html">
+						<i class="iconfont icon-telphone"></i>
+					</a>
+
+				</div>
+			</div>
+			<!--产品信息-->
+			<div class="am-container">
+
+				<div class="of-box1">
+					<div class="of-s">
+						<i class="iconfont icon-detail-info"></i>
+					</div>
+					<p>
+						{{list.shopintro}}
+					</p>
+					<div class="of-load fl">
+						<i class="iconfont icon-daohangxianlu of-load1"></i>
+					</div>
+					<div class="of-load2 fl">行程：{{list2.date}}</div>
+					<div class="of-load3 fl">
+						{{list.name}}
+
+					</div>
+					<div class="clear">
+
+					</div>
+
+				</div>
+				<div class="of-stitle">
+					<span class="of-st1"><i class="iconfont icon-point-address"></i> 北京出发</span>&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="of-st1"><i class="iconfont icon-calendar"></i> 2017/10/31</span>&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="of-st1"><i class="iconfont icon-peoples"></i> {{list2.people}}成人</span>
+
+				</div>
+				<!--联系人-->
+				<div class="of-link">
+					<div class="of-link-title ">
+						<i class="iconfont icon-mail-people of-lt1"></i> 联系人
+
+					</div>
+					<form class="am-form am-form-horizontal">
+						<div class="am-form-group">
+							<label for="doc-ipt-3" class="am-u-sm-3 am-form-label of-form1">姓&nbsp;&nbsp;&nbsp;名<span>*</span></label>
+							<div class="am-u-sm-9">
+								<input type="text" id="doc-ipt-3" placeholder="您的姓名" value="悠哉用户178XXXXX">
+							</div>
+						</div>
+
+						<div class="am-form-group">
+							<label for="doc-ipt-pwd-2" class="am-u-sm-3 am-form-label of-form1">手机号<span>*</span></label>
+							<div class="am-u-sm-9">
+								<input type="text" id="doc-ipt-pwd-2" placeholder="您的手机号" value="178XXXXXXXX">
+							</div>
+						</div>
+						<div class="am-form-group">
+							<label for="doc-ipt-pwd-2" class="am-u-sm-3 am-form-label of-form1">邮&nbsp;&nbsp;&nbsp;箱</label>
+							<div class="am-u-sm-9">
+								<input type="text" id="doc-ipt-pwd-2" placeholder="选填，用于接收行程书">
+							</div>
+						</div>
+
+					</form>
+
+				</div>
+
+				<!--出游人-->
+				<div class="of-people">
+					<div class="of-link-title fl">
+						<i class="iconfont icon-peoples of-lt1"></i> 出游人
+
+					</div>
+					<a href="people.html">
+						<div class=" of-people-choice fr">
+							请选择一位出游人 <i class="iconfont icon-right"></i>
+						</div>
+					</a>
+					<div class="clear"></div>
+				</div>
+				<!--优惠方案-->
+				<div class="of-activity">
+					<div class="of-link-title">
+						<i class="iconfont icon-discount-m of-lt1"></i> 优惠方案
+						<div class=" of-ac-box">
+							<ul class="am-list">
+								<li style="border-top: 0;">
+									<a href="#">
+										<div class="of-link-title title-spe">
+											<i class="iconfont icon-discount-m of-lt1"></i> 标准优惠
+
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="discount.html">
+										<div class="of-link-title fl">
+											优惠券
+
+										</div>
+										<div class=" of-people-choice fr">
+											<i class="iconfont icon-right"></i>
+										</div>
+										<div class="clear"></div>
+									</a>
+								</li>
+								<li style="border-bottom: 0;">
+									<a href="#">
+										<div class="of-link-title fl">
+											积分
+
+										</div>
+										<div class="of-link-b fl">
+											？
+										</div>
+										<div class=" of-people-choice fr">
+											您无可用积分
+										</div>
+										<div class="clear"></div>
+									</a>
+								</li>
+
+							</ul>
+						</div>
+
+					</div>
+				</div>
+				<!--附加产品-->
+				<div class="of-activity">
+					<div class="of-link-title">
+						<i class="iconfont icon-biaoqian of-lt1"></i> 附加产品
+						<div class=" of-ac-box">
+							<div class="of-link-title fl">
+								<p class="of-p1">单房差</p>
+								<p>2000 <span class="of-ccc">/间</span></p>
+							</div>
+							<div class="of-a fr">
+								<div class="of-remove active fl" @click="remove">
+									<i class="iconfont icon-jianhao of-a1"></i>
+								</div>
+								<div class="of-count fl">
+									1
+								</div>
+								<div class="of-add fl" @click="add">
+									<i class="iconfont icon-jiahao  of-a2"></i>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+				</div>
+				<!--备注-->
+				<div class="of-activity">
+					<div class="of-link-title">
+						<i class="iconfont icon-leaving-msg of-lt1"></i> 备注
+						<form action="" class="am-form am-form-inline">
+							<div class="am-form-group am-form-icon">
+								<i class="iconfont icon-edit-on a-f"></i>
+								<input type="text" class="am-form-field a-f2" placeholder="特殊条件请备注">
+							</div>
+						</form>
+
+					</div>
+				</div>
+				<!--服务门店-->
+				<div class="of-people">
+					<div class="of-link-title fl">
+						<i class="iconfont icon-point-address of-lt1"></i> 服务门店
+
+					</div>
+					<div class=" of-people-choice fr">
+						更换门店 <i class="iconfont icon-right"></i>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="of-address">
+				<img src="img/of-address.jpg" />
+				<div class="of-address1">
+					<div class="fl">
+
+						<p class="of-address-1">众信旅游北京呼叫中心</p>
+						<p class="of-address-2">北京市朝阳区朝阳公园路8号（朝阳 <br /> 公园西二门）
+						</p>
+					</div>
+					<div class="of-link1 fr">
+						<i class="iconfont icon-telphone"></i>
+					</div>
+
+				</div>
+			</div>
+			<!--底部-->
+			<div class="bottom">
+				<div class="b-price fl">
+					总价 <span class="of-price">￥8980</span>
+				</div>
+				<div class="of-detail fl">
+					明细<i class="iconfont icon-top of-det1"></i>
+					<i class="iconfont icon-bottom of-det2"></i>
+				</div>
+				<a :href="href4+list._id">
+					<div class="b-submit fr">
+						去付款
+					</div>
+				</a>
+			</div>
+			<!--明细-->
+			<div class="detail">
+				<div class="am-container">
+					<div class="det-1">
+
+						<div class="of-link-title fl">
+							<i class="iconfont icon-money of-lt1"></i> 费用明细
+
+						</div>
+						<div class=" of-people-choice fr">
+							<i class="iconfont icon-guanbi of-close"></i>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="det-list-1">
+						<div class="of-det-t">
+							<span>•</span> 团费
+						</div>
+						<div id="">
+
+							<div class="of-det-c fl">
+								&nbsp;&nbsp;&nbsp;成人
+
+							</div>
+							<div class=" of-det-p fr" id="p-price">
+								￥{{list.pricereally}}*{{list2.people}}
+							</div>
+
+							<div class="clear"></div>
+						</div>
+						<div id="">
+
+							<div class="of-det-c fl">
+								&nbsp;&nbsp;&nbsp;儿童
+
+							</div>
+							<div class=" of-det-p fr" id="c-price">
+								￥{{list.pricereally*0.8}}*{{list2.child}}
+							</div>
+
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="det-list-2">
+						<div class="of-det-t">
+							<span>•</span> 附加产品
+						</div>
+						<div class="of-det-c fl">
+							&nbsp;&nbsp;&nbsp;单房差
+
+						</div>
+						<div class=" of-det-p fr">
+							￥2000*1
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="bg">
+
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<!--<script src="js/jquery.min.js"></script>-->
+	<!--<![endif]-->
+	<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+	<script src="js/amazeui.min.js"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/axios.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#box",
+			data: {
+				href4: "../mobile/pay.html?_id=",
+				list: [],
+				list2: []
+			},
+			methods: {
+
+				remove: function() {
+					var p1 = this.list.pricereally * this.list2.people;
+					var p2 = this.list.pricereally * 0.8 * this.list2.child;
+					var price = p1 + p2 - 2000;
+					$(".of-price").text("￥" + price);
+				},
+				add: function() {
+					var p1 = this.list.pricereally * this.list2.people;
+					var p2 = this.list.pricereally * 0.8 * this.list2.child;
+					var price = p1 + p2 + 2000;
+					$(".of-price").text("￥" + price);
+				},
+
+			},
+			mounted: function() {
+
+				//获取参数id
+				var id = GetRequest()._id;
+				//axios方法
+				//商品订单信息
+				axios.get('/users/getOrderForm/?id=' + id).then(function(response) {
+					app.list2 = response.data.data;
+					console.log(app.list2)
+					//商品详情信息
+					axios.get('/users/getGoodsById/?_id=' + id).then(function(response) {
+						app.list = response.data.data;
+						console.log(app.list)
+						var p1 = app.list.pricereally * app.list2.people;
+						var p2 = app.list.pricereally * 0.8 * app.list2.child;
+						var price = p1 + p2 + 2000;
+						console.log(p1 + p2)
+						$(".of-price").text("￥" + price);
+					});
+				});
+
+			},
+
+		})
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var a = 0;
+			//明细
+			$(".of-detail").click(function() {
+				a++
+				if(a % 2 == 1) {
+					$(".bg").css("display", "block");
+					$(".of-det1").css("display", "none");
+					$(".of-det2").css("display", "inline");
+					$(".detail").stop().animate({
+						bottom: "4.5rem"
+					})
+				} else {
+					$(".bg").css("display", "none");
+					$(".of-det2").css("display", "none");
+					$(".of-det1").css("display", "inline");
+					$(".detail").stop().animate({
+						bottom: "-17rem"
+					})
+				}
+
+			});
+
+			//右上角关闭按钮
+			$(".of-close").click(function() {
+				a++;
+				$(".bg").css("display", "none");
+				$(".of-det2").css("display", "none");
+				$(".of-det1").css("display", "inline");
+				$(".detail").stop().animate({
+					bottom: "-15rem"
+				})
+			});
+			//单房差选择(价格变动与明细变动)
+			var b = parseInt($(".of-count").text());
+
+			$(".of-remove").click(function() {
+
+				$(".of-count").text(0);
+				$(".of-remove").removeClass("active");
+				$(".of-add").addClass("active")
+				$(".of-a1").css("color", "#cccccc");
+				$(".of-a2").css("color", "#ff3a5f");
+				$(".det-list-2").css("display", "none");
+
+				$(".det-list-1").css("border-bottom", "0");
+			})
+
+			$(".of-add").click(function() {
+				$(".of-count").text(1);
+				$(".of-add").removeClass("active");
+				$(".of-remove").addClass("active")
+				$(".of-a2").css("color", "#cccccc");
+				$(".of-a1").css("color", "#ff3a5f");
+				$(".det-list-2").css("display", "block");
+				//				$(".of-price").text("￥8980");
+				$(".det-list-1").css("border-bottom", "1px solid #ccc");
+			})
+
+		})
+	</script>
+
+</html>

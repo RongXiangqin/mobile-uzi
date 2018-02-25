@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>旅客信息</title>
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<!--<link rel="icon" type="image/png" href="i/favicon.png">-->
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<!--<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">-->
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<!--<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">-->
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/people.css" />
+		<link rel="stylesheet" type="text/css" href="css/yzfonts.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	</head>
+
+	<body>
+		<!--顶部-->
+		<div class="top">
+			<!--返回-->
+			<div class="back1">
+				<a href="javascript:;" onClick="history.back();"><i class="am-icon-angle-left"></i></a>
+			</div>
+			<span>常用信息</span>
+		</div>
+		<!--选项卡-->
+		<div class="am-tabs" data-am-tabs>
+			<!--<div class="">-->
+			<ul class="am-tabs-nav  bgw am-nav am-nav-tabs">
+				<li class="am-active">
+					<a href="#tab1">旅客信息</a>
+				</li>
+				<li>
+					<a href="#tab2">收货地址</a>
+				</li>
+				<li>
+					<a href="#tab3">发票抬头</a>
+				</li>
+			</ul>
+			<!--</div>-->
+			<div class="am-tabs-bd">
+				<div class="am-tab-panel am-fade am-in am-active" id="tab1">
+					<div class="" style="text-align: center;">
+						<div class="people-add">
+							<div class="of-add m-act fl">
+								<i class="iconfont icon-jiahao  of-a2"></i>
+							</div>
+							<!--<div>-->
+							<span class="add-p"> </span>&nbsp;新增旅客信息
+							<!--</div>-->
+							<div class="clear">
+							</div>
+						</div>
+					</div>
+					<!--旅客信息-->
+					<div class="p-box" id="p-box">
+
+						<!--<div class="p-message">
+						<p class="p-name">张三</p>
+						<p class="p-card">证件待完善 </p>
+						<p class="p-phone">手机号：17885426357</p>
+						<i class="am-icon-angle-right fr rgi"></i>
+					</div>-->
+					</div>
+				</div>
+				<div class="am-tab-panel am-fade" id="tab2">
+					<div class="" style="text-align: center;">
+						<div class="address-add">
+							<div class="of-add m-act fl">
+								<i class="iconfont icon-jiahao  of-a2"></i>
+							</div>
+							<!--<div>-->
+							<span class="add-p"> </span>&nbsp;新增收货地址
+							<!--</div>-->
+							<div class="clear">
+							</div>
+						</div>
+					</div>
+					<!--地址信息-->
+					<div class="p-message">
+						<p class="p-name">张三</p>
+						<p>17854XXXXXX </p>
+						<p>山东省青岛市城阳区</p>
+						<p>春阳路盈园国际中心</p>
+						<i class="am-icon-angle-right fr rgi"></i>
+					</div>
+				</div>
+				<div class="am-tab-panel am-fade" id="tab3">
+				</div>
+			</div>
+		</div>
+		<!--旅客信息添加-->
+		<div class="vister-add">
+			<!--顶部-->
+			<div class="top">
+				<!--返回-->
+				<div class="back1">
+					<a href="#" class="v-close"><i class="am-icon-angle-left"></i></a>
+				</div>
+				<span>新增出游人信息</span>
+			</div>
+			<form action="" class="am-form" data-am-validator id="form1">
+				<!--姓名-->
+				<div class="vister-name">
+					旅客姓名
+				</div>
+				<div class="city-box">
+					<ul class="am-list am-list-static">
+						<li>
+							中文姓名
+							<div class="fr">
+								<input type="text" class="v-name" name="name" id="name" value="" placeholder="填写中文姓名" />
+							</div>
+						</li>
+						<li>
+							姓
+							<div class="fr">
+								<input type="text" class="v-name-1" name="v-name-1" id="" value="" placeholder="拼音/英文 需与证件一致" />
+							</div>
+						</li>
+						<li>
+							名
+							<div class="fr">
+								<input type="text" class="v-name-2" name="v-name-2" id="" value="" placeholder="拼音/英文 需与证件一致" />
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--身份信息-->
+				<div class="vister-name">
+					身份信息
+				</div>
+				<div class="city-box">
+					<ul class="am-list am-list-static">
+						<li>
+							性别
+							<div class="fr">
+								<label for="man">
+                                <input type="radio" name="sex" id="man" value="1" />男
+                            </label>
+								<label for="woman">
+                                <input type="radio" name="sex" id="woman" value="0" />女
+                            </label>
+							</div>
+						</li>
+						<li>
+							出生年月
+							<div class="fr">
+								<input type="text" class="am-form-field" name="date" placeholder="年/月/日" data-am-datepicker required />
+							</div>
+						</li>
+						<li>
+							国籍
+							<div class="fr">
+								<input type="text" class="v-country" name="country" id="" value="中国" />
+							</div>
+						</li>
+						<li>
+							现居住
+							<div class="fr">
+								<input type="text" class="v-address" name="address" id="" value="中国大陆" />
+							</div>
+						</li>
+						<li>
+							手机
+							<div class="fr">
+								<input type="text" class="v-phone" name="tel" id="" value="" placeholder="11位手机号" />
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--证件信息-->
+				<div class="vister-name">
+					证件信息
+				</div>
+				<div class="city-box" style="margin-bottom: 20rem;">
+					<ul class="am-list am-list-static">
+						<li>
+							身份证
+							<div class="fr">
+								<input type="text" class="v-num" name="card" id="" value="" placeholder="证件号码" />
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--底部-->
+				<div>
+					<input class="bottom-v" type="button" name="" id="btn-add" value="保存" />
+				</div>
+			</form>
+		</div>
+
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<!--<script src="js/jquery.min.js"></script>-->
+	<!--<![endif]-->
+	<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/template-web.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/amazeui.min.js"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script id="tpl-list" type="text/html">
+		{{each data}}
+		<a href="changepeople.html?_id={{$value._id}}">
+			<div class="p-message">
+				<p class="p-name">{{$value.name}}</p>
+				<p class="p-card">身份证号：{{$value.card}} </p>
+				<p class="p-phone">手机号：{{$value.tel}}</p>
+				<i class="am-icon-angle-right fr rgi"></i>
+			</div>
+		</a>
+		{{/each}}
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var phone = sessionStorage.phone;
+			console.log(phone)
+			if(!phone) {
+				alert("请登录");
+				return;
+			}
+			//AJAX请求
+			$.get('/users/getPeople/?phone=' + phone, function(result) {
+				if(result.status) {
+
+					var html = template("tpl-list", result);
+					console.log(result.data)
+					$("#p-box").html(html);
+					//						$('.v-bir').datepicker();
+				}
+			})
+
+			$("#btn-add").click(function() {
+
+				var data = $("#form1").serialize() + "&phone=" + sessionStorage.phone;
+				console.log(data);
+				$.post("/users/addPeople/", data, function(result) {
+					if(result.status) {
+						location.href = "/mobile/people.html";
+					} else {
+						alert(result.msg)
+					}
+				})
+			})
+
+			var a = window.screen.height;
+			$(".vister-add").css("height", a);
+
+			//添加旅客信息
+			$(".people-add").click(function() {
+				$(".vister-add").css("display", "block");
+
+			});
+			//			
+
+			//编辑旅客信息
+			var name2;
+			var phone2;
+			var card2;
+			//				
+			//			$("#tab1").click(function (e) {
+			//				if (e.target.tagName=="p-message") {
+			//				$(".vister-add2").css("display", "block");
+			//				var a= e.target.find(".p-name").text();
+			//				var b= parseInt( e.target.find(".p-phone").text().slice(4));
+			//				var c= parseInt(e.target.find(".p-card").text().slice(5));
+			//				console.log(a+b+c)
+			//				
+			//				$(".v-name2").val(a) ;
+			//					$(".v-phone2").val(b);
+			//					$(".v-num2").val(c);
+			//				$(".bottom-v2").click(function() {
+			//					$(".vister-add2").css("display", "none");
+			//					
+			////					if(card2 == "") {
+			////						card2 = "证件信息待完善";
+			////					} else {
+			////						card2 = "身份证号：" + card2;
+			////					}
+			//                 
+			//				}); 
+			//				}
+			//			})	
+			$(".p-message").click(function() {
+
+				$(".vister-add2").css("display", "block");
+				// var a = $(this).find(".p-name").text();
+				// var b = parseInt($(this).find(".p-phone").text().slice(4));
+				// var c = parseInt($(this).find(".p-card").text().slice(5));
+				// $(".v-name2").val(a);
+				// $(".v-phone2").val(b);
+				// $(".v-num2").val(c);
+				// $(".bottom-v2").click(function() {
+				//     $(".vister-add2").css("display", "none");
+				//     //					if(card2 == "") {
+				//     //						card2 = "证件信息待完善";
+				//     //					} else {
+				//     //						card2 = "身份证号：" + card2;
+				//     //					}                   
+				// });
+				// console.log(name2 + phone2 + card2)
+
+			});
+			//返回按钮
+			$(".v-close").click(function() {
+				$(".vister-add").css("display", "none");
+
+			});
+			$(".v-close2").click(function() {
+				$(".vister-add2").css("display", "none");
+
+			});
+		})
+	</script>
+
+</html>

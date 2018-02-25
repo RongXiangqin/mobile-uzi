@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>旅客信息</title>
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<!--<link rel="icon" type="image/png" href="i/favicon.png">-->
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<!--<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">-->
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<!--<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">-->
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/people.css" />
+		<link rel="stylesheet" type="text/css" href="css/yzfonts.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	</head>
+
+	<body>
+
+		<!--旅客信息更改-->
+		<div class="vister-add2">
+			<!--顶部-->
+			<div class="top">
+				<!--返回-->
+				<div class="back1">
+				<a href="javascript:;" onClick="history.back();"><i class="am-icon-angle-left"></i></a>
+					
+				</div>
+				<span>编辑出游人信息</span>
+			</div>
+			<form action="" class="am-form" data-am-validator id="form2">
+				<div class="p-box">
+					
+				</div>
+				<div>
+					<input class="bottom-v2" type="button" name="" id="btnsave" value="保存" />
+					<input class="bottom-v3" type="button" name="" id="btn-delete" value="删除" />
+				</div>
+			</form>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<!--<script src="js/jquery.min.js"></script>-->
+	<!--<![endif]-->
+	<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+	<script src="js/template-web.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/amazeui.min.js"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script id="tpl-list" type="text/html">
+		<!--姓名-->
+				<div class="vister-name">
+					旅客姓名
+				</div>
+				<div class="city-box">
+					<ul class="am-list am-list-static">
+						<li>
+							中文姓名
+							<div class="fr">
+								<input type="text" class="v-name2" name="name" id="" value="{{name}}" placeholder="填写中文姓名" />
+							</div>
+						</li>
+						<li>
+							姓
+							<div class="fr">
+								<input type="text" class="v-name-1" name="v-name" id="" value="" placeholder="拼音/英文 需与证件一致" />
+							</div>
+						</li>
+						<li>
+							名
+							<div class="fr">
+								<input type="text" class="v-name-2" name="v-name" id="" value="" placeholder="拼音/英文 需与证件一致" />
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--身份信息-->
+				<div class="vister-name">
+					身份信息
+				</div>
+				<div class="city-box">
+						<ul class="am-list am-list-static">
+							<li>
+								性别
+								<div class="fr">
+									<label for="man">
+                                    <input type="radio" name="sex" id="man" value="" />男
+                                </label>
+									<label for="woman">
+                                    <input type="radio" name="sex" id="woman" value="" />女
+                                </label>
+								</div>
+							</li>
+							<li>
+								出生年月
+								<div class="fr">
+									<input type="text" name="date" value="" class="am-form-field" placeholder="年/月/日" data-am-datepicker required />
+								</div>
+							</li>
+							<li>
+								国籍
+								<div class="fr">
+									<input type="text" class="v-country" name="country" id="" value="{{country}}" />
+								</div>
+							</li>
+							<li>
+								现居住
+								<div class="fr">
+									<input type="text" class="v-address" name="address" id="" value="{{address}}" />
+								</div>
+							</li>
+							<li>
+								手机
+								<div class="fr">
+									<input type="text" class="v-phone2" name="tel" id="" value="{{tel}}" placeholder="11位手机号" />
+								</div>
+							</li>
+						</ul>
+				</div>
+				<!--证件信息-->
+				<div class="vister-name">
+					证件信息
+				</div>
+				<div class="city-box">
+					<ul class="am-list am-list-static">
+						<li>
+							身份证
+							<div class="fr">
+								<input type="text" class="v-num" name="card" id="" value="{{card}}" placeholder="证件号码" />
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--底部-->
+				
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//是否登录
+			var phone = sessionStorage.phone;
+			console.log(phone)
+			if(!phone) {
+				alert("请登录");
+				return;
+			}
+    		
+			//获取参数id
+			var id= GetRequest()._id;
+			
+			$.get("/users/getPeopleById/?_id="+id,function (result) {
+				if(result.status) {
+
+					var html = template("tpl-list", result.data);
+					console.log(result.data)
+					$(".p-box").html(html);
+					//						$('.v-bir').datepicker();
+				}
+			});	
+  			
+  			$("#btnsave").click(function() {
+				var data = $("#form2").serialize()+"&_id="+id;
+				console.log(data);
+				$.post("/users/changePeopleById/?_id="+id, data, function(result) {
+					if(result.status) {
+						location.href = "people.html";
+					} else {
+						alert(result.msg)
+					}
+				})
+			});
+  			
+  			
+  			
+  			
+			var a = window.screen.height;
+			$(".vister-add").css("height", a);
+
+			
+		})
+	</script>
+
+</html>

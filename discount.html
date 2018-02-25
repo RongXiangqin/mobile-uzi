@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>优惠券</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<!--<link rel="icon" type="image/png" href="i/favicon.png">-->
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<!--<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<!--<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/discount.css" />
+		<link rel="stylesheet" type="text/css" href="css/yzfonts.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	</head>
+
+	<body>
+		<!--顶部-->
+		<div class="top">
+			<!--返回-->
+			<div class="back1">
+				<a href="javascript:;" onClick="history.back();"><i class="am-icon-angle-left"></i></a>
+			</div>
+			<span>优惠券</span>
+
+		</div>
+
+		<!--标签页-->
+		<div class="order">
+			<span class="or-t1 active">可使用</span>
+			<span class="or-t2">不可用</span>
+		</div>
+		<div class="dis-a">
+
+			<div class="discount-box">
+				<div class="dis-num">
+					优惠码：DZM21252H997144
+				</div>
+				<div class="dis-1 fl">
+					抵扣<span class="dis-price">￥100</span>
+				</div>
+				<div class="dis-intro fl">
+					<p>最多使用次数：1次</p>
+					<p>已使用次数：0次</p>
+					<p>有效期至：2018-9-28</p>
+				</div>
+				<div class="clear">
+
+				</div>
+			</div>
+			<div class="dis-more">
+				<div class="dis-m-intro">
+					使用范围：满3000可用，限正价跟团、邮轮及自由行产品
+				</div>
+				<div class="d-more">
+					<i class="am-icon-angle-down d-m1"></i>
+					<i class="am-icon-angle-up d-m2"></i>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<!--<script src="js/jquery.min.js"></script>-->
+	<!--<![endif]-->
+	<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+	<script src="js/amazeui.min.js"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var a=0
+			$(".d-more").click(function () {
+				a++;
+				if (a%2==1) {
+					$(".dis-m-intro").css("display","block");
+				$(".d-m1").css("display","none");
+				$(".d-m2").css("display","inline");
+				} else{
+					$(".dis-m-intro").css("display","none");
+				$(".d-m2").css("display","none");
+				$(".d-m1").css("display","inline");
+				}
+				
+			});
+			
+			
+			//可用、不可用
+			$(".or-t2").click(function () {
+				$(".or-t1").removeClass("active");
+				$(".or-t2").addClass("active");
+				$(".dis-a").css("display","none")
+			})
+			$(".or-t1").click(function () {
+				$(".or-t2").removeClass("active");
+				$(".or-t1").addClass("active");
+				$(".dis-a").css("display","block")
+			})
+			
+			
+			
+		})
+	</script>
+
+</html>

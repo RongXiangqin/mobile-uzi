@@ -1,0 +1,2447 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>目的地</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<!--<link rel="icon" type="image/png" href="i/favicon.png">-->
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<!--<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<!--<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/destination.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-shouye.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	</head>
+
+	<body>
+		<div class="de-top">
+
+			<div class="tt-search-box ">
+
+				<a href="search.html">
+					<div class="t-search ">
+
+						<i class="am-icon-search"></i>搜索目的地/景点/关键词
+					</div>
+				</a>
+
+			</div>
+
+		</div>
+		<!--选项卡-->
+		<div class="am-tabs" data-am-tabs="{noSwipe: 1}">
+			<ul class="am-tabs-nav am-nav am-nav-tabs tab-left fl">
+				<li class="am-active">
+					<a href="#tab1">热门</a>
+				</li>
+				<li>
+					<a href="#tab2">欧洲</a>
+				</li>
+				<li>
+					<a href="#tab3">日本</a>
+				</li>
+				<li>
+					<a href="#tab4">东南亚</a>
+				</li>
+				<li>
+					<a href="#tab5">魅力海岛</a>
+				</li>
+				<li>
+					<a href="#tab6">国内</a>
+				</li>
+				<li>
+					<a href="#tab7">中东非洲</a>
+				</li>
+				<li>
+					<a href="#tab8">美洲</a>
+				</li>
+				<li>
+					<a href="#tab9">澳洲</a>
+				</li>
+				<li>
+					<a href="#tab10">港澳台</a>
+				</li>
+			</ul>
+
+			<div class="am-tabs-bd tab-right fl am-scrollable-vertical">
+				<div class="am-tab-panel am-fade am-in am-active" id="tab1">
+					<!--轮播图-->
+					<div class="am-container " style="margin: 10px 0 10px 0; ">
+
+						<div class="swiper-container slid-b" id="slider1">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img class="tb" src="img/tb-1.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-2.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-3.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-4.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-5.jpg" /></div>
+							</div>
+							<!-- Add Pagination -->
+							<!--<div class="swiper-pagination"></div>-->
+						</div>
+					</div>
+					<!--热门目的地-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe626;</i> 热门目的地
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-1.jpg" />
+											<div class="pic-intro">
+												丨欧洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-2.jpg" />
+											<div class="pic-intro">
+												丨日本
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-3.jpg" />
+											<div class="pic-intro">
+												丨泰国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-4.jpg" />
+											<div class="pic-intro">
+												丨巴厘岛
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-5.jpg" />
+											<div class="pic-intro">
+												丨土耳其
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-6.jpg" />
+											<div class="pic-intro">
+												丨美国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-7.jpg" />
+											<div class="pic-intro">
+												丨大洋洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-8.jpg" />
+											<div class="pic-intro">
+												丨云南
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--热门玩法-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									德法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									经典北欧
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									东欧系列
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									大阪+东京
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									美国东西海岸
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--热门地区-->
+					<div class="am-container" style="margin-bottom: 10rem;">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门地区
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									捷克
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									希腊
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									澳大利亚
+								</div>
+							</div>
+						</div>
+						<div class="am-g  p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									九州
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									北海道
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									普吉岛
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									俄罗斯
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									新疆
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									内蒙古
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="am-tab-panel am-fade" id="tab2">
+					<!--轮播图-->
+					<div class="am-container " style="margin: 10px 0 10px 0; ">
+
+						<div class="swiper-container slid-b" id="slider1">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img class="tb" src="img/tb-4.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-2.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-3.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-4.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-5.jpg" /></div>
+							</div>
+							<!-- Add Pagination -->
+							<!--<div class="swiper-pagination"></div>-->
+						</div>
+					</div>
+					<!--热门目的地-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe626;</i> 热门目的地
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-5.jpg" />
+											<div class="pic-intro">
+												丨欧洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-3.jpg" />
+											<div class="pic-intro">
+												丨日本
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-4.jpg" />
+											<div class="pic-intro">
+												丨泰国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-1.jpg" />
+											<div class="pic-intro">
+												丨巴厘岛
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-2.jpg" />
+											<div class="pic-intro">
+												丨土耳其
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-6.jpg" />
+											<div class="pic-intro">
+												丨美国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-7.jpg" />
+											<div class="pic-intro">
+												丨大洋洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-8.jpg" />
+											<div class="pic-intro">
+												丨云南
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--热门玩法-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									德法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									经典北欧
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									东欧系列
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									大阪+东京
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									美国东西海岸
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--热门地区-->
+					<div class="am-container" style="margin-bottom: 10rem;">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									捷克
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									希腊
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									澳大利亚
+								</div>
+							</div>
+						</div>
+						<div class="am-g  p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									九州
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									北海道
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									普吉岛
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									俄罗斯
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									新疆
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									内蒙古
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="am-tab-panel am-fade" id="tab3">
+					<!--轮播图-->
+					<div class="am-container " style="margin: 10px 0 10px 0; ">
+
+						<div class="swiper-container slid-b" id="slider1">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img class="tb" src="img/tb-3.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-2.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-3.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-4.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-5.jpg" /></div>
+							</div>
+							<!-- Add Pagination -->
+							<!--<div class="swiper-pagination"></div>-->
+						</div>
+					</div>
+					<!--热门目的地-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe626;</i> 热门目的地
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-4.jpg" />
+											<div class="pic-intro">
+												丨欧洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-3.jpg" />
+											<div class="pic-intro">
+												丨日本
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-5.jpg" />
+											<div class="pic-intro">
+												丨泰国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-2.jpg" />
+											<div class="pic-intro">
+												丨巴厘岛
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-1.jpg" />
+											<div class="pic-intro">
+												丨土耳其
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-6.jpg" />
+											<div class="pic-intro">
+												丨美国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-8.jpg" />
+											<div class="pic-intro">
+												丨大洋洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-7.jpg" />
+											<div class="pic-intro">
+												丨云南
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--热门玩法-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									德法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									经典北欧
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									东欧系列
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									大阪+东京								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									美国东西海岸
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--热门地区-->
+					<div class="am-container" style="margin-bottom: 10rem;">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									捷克
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									希腊
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									澳大利亚
+								</div>
+							</div>
+						</div>
+						<div class="am-g  p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									九州
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									北海道
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									普吉岛
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									俄罗斯
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									新疆
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									内蒙古
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="am-tab-panel am-fade" id="tab4">
+					<!--轮播图-->
+					<div class="am-container " style="margin: 10px 0 10px 0; ">
+
+						<div class="swiper-container slid-b" id="slider1">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img class="tb" src="img/tb-5.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-2.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-3.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-4.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-5.jpg" /></div>
+							</div>
+							<!-- Add Pagination -->
+							<!--<div class="swiper-pagination"></div>-->
+						</div>
+					</div>
+					<!--热门目的地-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe626;</i> 热门目的地
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-3.jpg" />
+											<div class="pic-intro">
+												丨欧洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-4.jpg" />
+											<div class="pic-intro">
+												丨日本
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-8.jpg" />
+											<div class="pic-intro">
+												丨泰国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-5.jpg" />
+											<div class="pic-intro">
+												丨巴厘岛
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-2.jpg" />
+											<div class="pic-intro">
+												丨土耳其
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-1.jpg" />
+											<div class="pic-intro">
+												丨美国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-6.jpg" />
+											<div class="pic-intro">
+												丨大洋洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-7.jpg" />
+											<div class="pic-intro">
+												丨云南
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--热门玩法-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									德法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									经典北欧
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									东欧系列
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									大阪+东京
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									美国东西海岸
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--热门地区-->
+					<div class="am-container" style="margin-bottom: 10rem;">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									捷克
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									希腊
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									澳大利亚
+								</div>
+							</div>
+						</div>
+						<div class="am-g  p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									九州
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									北海道
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									普吉岛
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									俄罗斯
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									新疆
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									内蒙古
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="am-tab-panel am-fade" id="tab5">
+					<!--轮播图-->
+					<div class="am-container " style="margin: 10px 0 10px 0; ">
+
+						<div class="swiper-container slid-b" id="slider1">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img class="tb" src="img/tb-4.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-2.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-3.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-4.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-5.jpg" /></div>
+							</div>
+							<!-- Add Pagination -->
+							<!--<div class="swiper-pagination"></div>-->
+						</div>
+					</div>
+					<!--热门目的地-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe626;</i> 热门目的地
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-7.jpg" />
+											<div class="pic-intro">
+												丨欧洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-1.jpg" />
+											<div class="pic-intro">
+												丨日本
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-8.jpg" />
+											<div class="pic-intro">
+												丨泰国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-6.jpg" />
+											<div class="pic-intro">
+												丨巴厘岛
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-5.jpg" />
+											<div class="pic-intro">
+												丨土耳其
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-2.jpg" />
+											<div class="pic-intro">
+												丨美国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-3.jpg" />
+											<div class="pic-intro">
+												丨大洋洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-4.jpg" />
+											<div class="pic-intro">
+												丨云南
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--热门玩法-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									德法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									经典北欧
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									东欧系列
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									大阪+东京
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									美国东西海岸
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--热门地区-->
+					<div class="am-container" style="margin-bottom: 10rem;">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									捷克
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									希腊
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									澳大利亚
+								</div>
+							</div>
+						</div>
+						<div class="am-g  p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									九州
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									北海道
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									普吉岛
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									俄罗斯
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									新疆
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									内蒙古
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="am-tab-panel am-fade" id="tab6">
+					<!--轮播图-->
+					<div class="am-container " style="margin: 10px 0 10px 0; ">
+
+						<div class="swiper-container slid-b" id="slider1">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img class="tb" src="img/tb-2.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-2.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-3.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-4.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-5.jpg" /></div>
+							</div>
+							<!-- Add Pagination -->
+							<!--<div class="swiper-pagination"></div>-->
+						</div>
+					</div>
+					<!--热门目的地-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe626;</i> 热门目的地
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-3.jpg" />
+											<div class="pic-intro">
+												丨欧洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-5.jpg" />
+											<div class="pic-intro">
+												丨日本
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-7.jpg" />
+											<div class="pic-intro">
+												丨泰国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-2.jpg" />
+											<div class="pic-intro">
+												丨巴厘岛
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-4.jpg" />
+											<div class="pic-intro">
+												丨土耳其
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-1.jpg" />
+											<div class="pic-intro">
+												丨美国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-6.jpg" />
+											<div class="pic-intro">
+												丨大洋洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-8.jpg" />
+											<div class="pic-intro">
+												丨云南
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--热门玩法-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									德法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									经典北欧
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									东欧系列
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									大阪+东京
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									美国东西海岸
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--热门地区-->
+					<div class="am-container" style="margin-bottom: 10rem;">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									捷克
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									希腊
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									澳大利亚
+								</div>
+							</div>
+						</div>
+						<div class="am-g  p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									九州
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									北海道
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									普吉岛
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									俄罗斯
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									新疆
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									内蒙古
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="am-tab-panel am-fade" id="tab7">
+					<!--轮播图-->
+					<div class="am-container " style="margin: 10px 0 10px 0; ">
+
+						<div class="swiper-container slid-b" id="slider1">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img class="tb" src="img/tb-4.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-2.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-3.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-4.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-5.jpg" /></div>
+							</div>
+							<!-- Add Pagination -->
+							<!--<div class="swiper-pagination"></div>-->
+						</div>
+					</div>
+					<!--热门目的地-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe626;</i> 热门目的地
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-2.jpg" />
+											<div class="pic-intro">
+												丨欧洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-5.jpg" />
+											<div class="pic-intro">
+												丨日本
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-3.jpg" />
+											<div class="pic-intro">
+												丨泰国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-1.jpg" />
+											<div class="pic-intro">
+												丨巴厘岛
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-7.jpg" />
+											<div class="pic-intro">
+												丨土耳其
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-6.jpg" />
+											<div class="pic-intro">
+												丨美国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-2.jpg" />
+											<div class="pic-intro">
+												丨大洋洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-5.jpg" />
+											<div class="pic-intro">
+												丨云南
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--热门玩法-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									德法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									经典北欧
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									东欧系列
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									大阪+东京
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									美国东西海岸
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--热门地区-->
+					<div class="am-container" style="margin-bottom: 10rem;">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									捷克
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									希腊
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									澳大利亚
+								</div>
+							</div>
+						</div>
+						<div class="am-g  p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									九州
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									北海道
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									普吉岛
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									俄罗斯
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									新疆
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									内蒙古
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="am-tab-panel am-fade" id="tab8">
+					<!--轮播图-->
+					<div class="am-container " style="margin: 10px 0 10px 0; ">
+
+						<div class="swiper-container slid-b" id="slider1">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img class="tb" src="img/tb-3.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-2.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-3.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-4.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-5.jpg" /></div>
+							</div>
+							<!-- Add Pagination -->
+							<!--<div class="swiper-pagination"></div>-->
+						</div>
+					</div>
+					<!--热门目的地-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe626;</i> 热门目的地
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-4.jpg" />
+											<div class="pic-intro">
+												丨欧洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-7.jpg" />
+											<div class="pic-intro">
+												丨日本
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-8.jpg" />
+											<div class="pic-intro">
+												丨泰国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-6.jpg" />
+											<div class="pic-intro">
+												丨巴厘岛
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-2.jpg" />
+											<div class="pic-intro">
+												丨土耳其
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-4.jpg" />
+											<div class="pic-intro">
+												丨美国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-1.jpg" />
+											<div class="pic-intro">
+												丨大洋洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-3.jpg" />
+											<div class="pic-intro">
+												丨云南
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--热门玩法-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									德法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									经典北欧
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									东欧系列
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									大阪+东京
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									美国东西海岸
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--热门地区-->
+					<div class="am-container" style="margin-bottom: 10rem;">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									捷克
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									希腊
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									澳大利亚
+								</div>
+							</div>
+						</div>
+						<div class="am-g  p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									九州
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									北海道
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									普吉岛
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									俄罗斯
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									新疆
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									内蒙古
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="am-tab-panel am-fade" id="tab9">
+					<!--轮播图-->
+					<div class="am-container " style="margin: 10px 0 10px 0; ">
+
+						<div class="swiper-container slid-b" id="slider1">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img class="tb" src="img/tb-2.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-2.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-3.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-4.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-5.jpg" /></div>
+							</div>
+							<!-- Add Pagination -->
+							<!--<div class="swiper-pagination"></div>-->
+						</div>
+					</div>
+					<!--热门目的地-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe626;</i> 热门目的地
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-1.jpg" />
+											<div class="pic-intro">
+												丨欧洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-2.jpg" />
+											<div class="pic-intro">
+												丨日本
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-3.jpg" />
+											<div class="pic-intro">
+												丨泰国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-4.jpg" />
+											<div class="pic-intro">
+												丨巴厘岛
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-5.jpg" />
+											<div class="pic-intro">
+												丨土耳其
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-6.jpg" />
+											<div class="pic-intro">
+												丨美国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-7.jpg" />
+											<div class="pic-intro">
+												丨大洋洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-8.jpg" />
+											<div class="pic-intro">
+												丨云南
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--热门玩法-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									德法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									经典北欧
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									东欧系列
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									大阪+东京
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									美国东西海岸
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--热门地区-->
+					<div class="am-container" style="margin-bottom: 10rem;">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									捷克
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									希腊
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									澳大利亚
+								</div>
+							</div>
+						</div>
+						<div class="am-g  p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									九州
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									北海道
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									普吉岛
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									俄罗斯
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									新疆
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									内蒙古
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="am-tab-panel am-fade" id="tab10">
+					<!--轮播图-->
+					<div class="am-container " style="margin: 10px 0 10px 0; ">
+
+						<div class="swiper-container slid-b" id="slider1">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img class="tb" src="img/tb-5.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-2.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-3.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-4.jpg" /></div>
+								<div class="swiper-slide"><img class="tb" src="img/tb-5.jpg" /></div>
+							</div>
+							<!-- Add Pagination -->
+							<!--<div class="swiper-pagination"></div>-->
+						</div>
+					</div>
+					<!--热门目的地-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe626;</i> 热门目的地
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-7.jpg" />
+											<div class="pic-intro">
+												丨欧洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-3.jpg" />
+											<div class="pic-intro">
+												丨日本
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-1.jpg" />
+											<div class="pic-intro">
+												丨泰国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-6.jpg" />
+											<div class="pic-intro">
+												丨巴厘岛
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-7.jpg" />
+											<div class="pic-intro">
+												丨土耳其
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-5.jpg" />
+											<div class="pic-intro">
+												丨美国
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-1.jpg" />
+											<div class="pic-intro">
+												丨大洋洲
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="am-u-sm-6">
+								<a href="#">
+									<div class="b-box">
+										<div class="home-b">
+											<img src="img/b-8.jpg" />
+											<div class="pic-intro">
+												丨云南
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!--热门玩法-->
+					<div class="am-container">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									德法瑞意
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									经典北欧
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box  p1">
+									东欧系列
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									大阪+东京
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box ">
+									美国东西海岸
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--热门地区-->
+					<div class="am-container" style="margin-bottom: 10rem;">
+						<div class="part-title">
+							<i class="iconfont title-icon">&#xe637;</i> 热门玩法
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									捷克
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									希腊
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									澳大利亚
+								</div>
+							</div>
+						</div>
+						<div class="am-g  p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									九州
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									北海道
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									普吉岛
+								</div>
+							</div>
+						</div>
+						<div class="am-g p2">
+							<div class="am-u-sm-4">
+								<div class="play-box2  p1">
+									俄罗斯
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									新疆
+								</div>
+							</div>
+							<div class="am-u-sm-4">
+								<div class="play-box2   p1">
+									内蒙古
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="clear">
+
+			</div>
+		</div>
+		<!--底部导航栏-->
+		<div class="bottom">
+			<ul class="am-avg-sm-5 am-thumbnails">
+				<li>
+					<a href="index.html">
+						<div class="home-key">
+							<div>
+								<i class="iconfont icon-comfooter-shouye home-1"></i>
+							</div>
+
+							首页
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="vans.html">
+						<div class="home-key">
+							<div>
+								<i class="iconfont icon-comfooter-temai home-1 "></i>
+							</div>
+
+							<span >特卖会</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="destination.html">
+						<div class="home-key home-r">
+							<div class="sign">
+								<i class="iconfont icon-dizhi"></i>
+							</div>
+
+							<span class="b-active2">目的地</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="find.html">
+						<div class="home-key">
+							<div>
+								<i class="iconfont icon-comfooter-faxian home-1"></i>
+							</div>
+
+							发现
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="mycenter.html">
+						<div class="home-key">
+							<div>
+								<i class="iconfont icon-comfooter-wode home-1"></i>
+							</div>
+
+							我的
+						</div>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<!--<script src="js/jquery.min.js"></script>-->
+	<!--<![endif]-->
+	<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/amazeui.min.js"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+
+			var swiper1 = new Swiper('#slider1', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+				autoplay: 2000,
+				loop: true,
+				speed: 500
+			});
+		}
+	</script>
+	<script type="text/javascript">
+		var a = window.screen.height;
+		var b= $(".de-top").height();
+		console.log(b)
+//		$(".login-bg").css("height", a);
+		$(".am-scrollable-vertical").css("height", a-b);
+		
+	</script>
+	<script type="text/javascript">
+		$("img").click(function () {
+			location.href="detail.html"
+		})
+	</script>
+
+</html>

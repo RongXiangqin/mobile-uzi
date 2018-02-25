@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>个人资料</title>
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<!--<link rel="icon" type="image/png" href="i/favicon.png">-->
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<!--<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">-->
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<!--<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">-->
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/mine.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	</head>
+
+	<body>
+
+		<div class="top">
+			<!--返回-->
+			<div class="back1">
+				<a href="javascript:;" onClick="history.back();">返回</a>
+			</div>
+			<span>我的悠哉</span>
+			<div class="save">
+				<input type="button" name="" class="btn" id="save-btn" value="保存" />
+			</div>
+
+		</div>
+
+		<form action="" class="am-form" id="form1">
+			<div class="box">
+
+			</div>
+			<!--隐藏数据-->
+			<input type="hidden" name="phone" id="phone" value="" />
+			<!--<ul class="am-list am-list-static">
+					<li>
+						头像
+						<div class="fr head-pic">
+							<img src="img/b-2.jpg" />
+						</div>
+						<div class="clear"></div>
+
+					</li>
+					<li>
+						昵称
+						<div class="fr">
+							<input type="text" class="v-name-1" name="nickName" id="" value="悠哉用户" />
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li>
+						性别
+						<div class="fr">
+							<select name="sex" class="v-sex">
+								<option value="男">男</option>
+								<option value="女">女</option>
+							</select>
+						</div>
+						<div class="clear"></div>
+
+					</li>
+					<li>
+						生日
+						<div class="fr">
+							<input type="text" class="am-form-field v-bir" name="birthday" placeholder="年/月/日" data-am-datepicker required />
+
+						</div>
+						<div class="clear"></div>
+
+					</li>
+				</ul>-->
+
+		</form>
+
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<!--<script src="js/jquery.min.js"></script>-->
+	<!--<![endif]-->
+	<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+	<script src="js/template-web.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/amazeui.min.js"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--模板？-->
+	<script id="tpl-list" type="text/html">
+
+		<ul class="am-list am-list-static">
+			<li>
+				头像
+				<div class="fr head-pic">
+					<img src="img/b-2.jpg" />
+				</div>
+				<div class="clear"></div>
+
+			</li>
+			<li>
+				昵称
+				<div class="fr">
+					<input type="text" class="v-name-1" name="nickName" id="" value="{{nickName}}" />
+				</div>
+				<div class="clear"></div>
+			</li>
+			<li>
+				性别
+				<div class="fr">
+					<select name="sex" value="{{sex}}" class="v-sex">
+						<option value="男">男</option>
+						<option value="女">女</option>
+					</select>
+				</div>
+				<div class="clear"></div>
+
+			</li>
+			<li>
+				生日
+				<div class="fr">
+					<input type="text" class="am-form-field v-bir" id="my-datepicker" name="birthday" placeholder="年/月/日" required />
+
+				</div>
+				<div class="clear"></div>
+
+			</li>
+
+		</ul>
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//赋值input【type=hidden】
+
+			var phone = sessionStorage.phone;
+			console.log(phone)
+			if(!phone) {
+				alert("请登录");
+				return;
+			}
+			$('#phone').val(phone);
+
+			$("#save-btn").click(function() {
+				var data = $("#form1").serialize();
+				console.log(data);
+				$.post("/users/updateInfo/", data, function(result) {
+					if(result.status) {
+						location.href = "mycenter.html";
+					} else {
+						alert(result.msg)
+					}
+				})
+			});
+
+			$.ajax({
+				url: '/users/getInfo/',
+				type: 'GET',
+				async: true,
+				// dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+				data: {
+					"phone": sessionStorage.phone,
+					// console.log(name)
+				},
+				success: function(result) {
+					if(result.status) {
+						
+						var html = template("tpl-list", result.data);
+						$(".box").html(html);
+						$('.v-bir').datepicker();
+					}
+				}
+			});
+
+		})
+	</script>
+
+</html>

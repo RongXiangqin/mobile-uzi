@@ -1,0 +1,91 @@
+@charset "utf-8";
+/*顶部*/
+.top {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 48px;
+	width: 100%;
+	z-index: 200;
+	text-align: center;
+	background-color: #f6f6f6;
+	/*display: none;*/
+}
+.back1 {
+	float: left;
+	margin-top: 8px;
+	margin-left: -3px;
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	/*background: rgba(0,0,0,0.5);*/
+	z-index: 4;
+	line-height: 22px;
+	text-align: center;
+	color: #ff485e;
+	font-size: 32px;
+	position: relative;
+}
+.back1 a{
+	color: #ff485e;
+}
+@font-face {
+	font-family: 'iconfont';
+	src: url('../fonts/iconfont.eot');
+	src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+	color: white;
+}
+
+
+.mycolor {
+	/*font-size: 1.4rem;*/
+	background-color: #f6f6f6;
+	
+}
+.home-search-box {
+	margin-left: 18%;
+	margin-top: 17px;
+	font-size: 1.4rem;
+}
+
+.home-search {
+	font-size: 1.4rem;
+	border: 0;
+	border-radius: 40px;
+	width: 228px;
+	height: 33px;
+	margin-top: -10px;
+}
+.am-form-icon [class*=am-icon-]{
+	left: 1rem;
+	color: #999;
+}
+.am-form-icon .am-form-field{
+	padding-left: 2.5em !important;
+}
+/*目的地列表*/
+.s-country{
+	display: inline-block;
+	width: 100%;
+	background-color: #eff0f1;
+	text-align: center;
+	padding: 0.9rem 0;
+	border-radius: 8px ;
+	font-size: 1.2rem;
+}
+.s-title{
+	padding: 1rem 0;
+	color: #999;
+}
+.am-g{
+	margin-bottom: 1rem;
+}

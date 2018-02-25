@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>详情页</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<!--<link rel="icon" type="image/png" href="i/favicon.png">-->
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<!--<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<!--<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/detail.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+
+	</head>
+
+	<body>
+
+		<!--定位按钮-->
+		<!--返回-->
+		<div class="back">
+			<a href="javascript:;" onClick="history.back();"><i class="am-icon-angle-left"></i></a>
+		</div>
+		<!--详情-->
+		<div class="detail m-list">
+			&hellip;
+		</div>
+		<!--顶部-->
+		<div class="top">
+			<div class="back1">
+				<a href="javascript:;" onClick="history.back();"><i class="am-icon-angle-left"></i></a>
+			</div>
+			<span>北京出发</span>
+			<!--详情-->
+			<div class="detail1 m-list">
+				<!--<i class="am-icon-ellipsis-h"></i>-->
+				&hellip;
+
+			</div>
+		</div>
+		<!--右上角下拉菜单-->
+		<div class="more-s">
+
+		</div>
+		<div class="more-list">
+			<ul class="am-list am-list-border">
+				<li>
+					<a href="myorder.html"><i class="iconfont">&#xe615;</i> 我的订单</a>
+				</li>
+				<li>
+					<a href="#"> <i class="iconfont">&#xe641;</i> 浏览历史
+					</a>
+				</li>
+				<li>
+					<a href="index.html"><i class="iconfont">&#x3512;</i> 回到首页</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="deta">
+			<form action="" method="post" id="form">
+
+				<!--轮播图-->
+				<!--<template v-for="item in list">-->
+				<div class="am-container ">
+
+					<div class="swiper-container slid-b" id="slider1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img class="tb" :src="list.mdImg" /></div>
+							<input type="hidden" name="mdImg" id="mdImg" :value="list.mdImg" />
+
+							<div class="swiper-slide"><img class="tb" src="img/d-1.jpg" /></div>
+							<div class="swiper-slide"><img class="tb" src="img/d-2.jpg" /></div>
+							<div class="swiper-slide"><img class="tb" src="img/d-3.jpg" /></div>
+							<div class="swiper-slide"><img class="tb" src="img/d-4.jpg" /></div>
+						</div>
+						<!-- Add Pagination -->
+						<!--<div class="swiper-pagination"></div>-->
+					</div>
+				</div>
+
+				<div class="am-container">
+					<div class="travel-box">
+						<div class="travel-title">
+							<i class="am-icon-flag"></i>&nbsp;北京出发-跟团游
+							<!--三角-->
+							<div class="sanjiao">
+
+							</div>
+						</div>
+						<div class="travel-num">
+							产品编号：{{list.shopnum}}
+							<input type="hidden" name="shopnum" id="" :value="list.shopnum" />
+						</div>
+						<div class="travel-intro">
+							{{list.shopintro}}
+							<input type="hidden" name="shopintro" id="" :value="list.shopintro" />
+
+						</div>
+						<div class="travel-price">
+							<span style="color:#ff485e ;">￥<b>{{list.pricereally}}</b></span>起
+							<input type="hidden" name="pricereally" id="shopnum" :value="list.pricereally" />
+
+							<span style="color:#999999 ; float: right; line-height: 40px;">此产品可即时付款</span>
+						</div>
+						<!--分割线-->
+						<div class="t-line">
+							<img class="com-l" src="img/com-hr-l.jpg" />
+							<img class="com-r" src="img/com-hr-r.jpg" />
+						</div>
+						<!--优惠-->
+						<div class="t-y">
+							<i class="iconfont t-y1">&#xe6a3;</i>&nbsp;优惠活动
+							<a href="#" class="t-y2" style="float: right;">
+								<span>4</span> &gt;
+							</a>
+						</div>
+						<!--同行优惠-->
+						<div class="tt-y">
+							<p class="tt-y1"><span>同行优惠</span>多人多惠</p>
+							<p class="tt-y1"><span>送积分</span>预订此线路将获得积分赠送</p>
+
+						</div>
+					</div>
+					<!--出行日期-->
+					<div class="travel-date">
+						出行班期
+						<a href="#" class="t-y22" style="float: right;">
+							<span><i class="iconfont t-d1">&#xe629;</i></span> &gt;
+						</a>
+
+					</div>
+					<!--出行班期滑动图-->
+					<div class="over">
+
+						<div class="am-container t-slider">
+							<div class="t-dot">
+								<img src="img/t-dot.png" />
+							</div>
+							<div class="swiper-container am-tabs" id="slider2">
+
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="date-box">
+											<div class="d-count">
+												剩余5
+											</div>
+											<div class="monday">
+												10-05 <br /> 周四
+											</div>
+											<div class="t-price">
+												￥9980
+											</div>
+										</div>
+										<div class="trave">
+											A行程
+										</div>
+
+									</div>
+									<div class="swiper-slide">
+										<div class="date-box">
+											<div class="d-count">
+												紧张
+											</div>
+											<div class="monday">
+												10-12 <br /> 周四
+											</div>
+											<div class="t-price">
+												￥7980
+											</div>
+										</div>
+										<div class="trave">
+											A行程
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="date-box">
+											<div class="d-count">
+												充足
+											</div>
+											<div class="monday">
+												10-31 <br /> 周二
+											</div>
+											<div class="t-price">
+												￥6980
+											</div>
+										</div>
+										<div class="trave">
+											D行程
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="date-box">
+											<div class="d-count">
+												充足
+											</div>
+											<div class="monday">
+												11-09 <br /> 周四
+											</div>
+											<div class="t-price">
+												￥7980
+											</div>
+										</div>
+										<div class="trave">
+											B行程
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="date-box">
+											<div class="d-count">
+												充足
+											</div>
+											<div class="monday">
+												11-18 <br /> 周六
+											</div>
+											<div class="t-price">
+												￥7980
+											</div>
+										</div>
+										<div class="trave">
+											B行程
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="date-box">
+											<div class="d-count">
+												充足
+											</div>
+											<div class="monday">
+												11-19 <br /> 周日
+											</div>
+											<div class="t-price">
+												￥6980
+											</div>
+										</div>
+										<div class="trave">
+											C行程
+										</div>
+									</div>
+									<div class="swiper-slide">
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--行程介绍-->
+					<div class="travel-date">
+						行程介绍
+						<!--<a href="#" class="t-y22" style="float: right;">
+					<span><i class="iconfont t-d1">&#xe629;</i></span> &gt;
+				</a>-->
+
+					</div>
+					<div class="over">
+
+						<div class="am-tabs t-tab" data-am-tabs>
+							<div class="t-dot2">
+								<img src="img/t-dot.png" />
+							</div>
+							<ul class="am-tabs-nav am-nav am-nav-tabs">
+								<li class="am-active">
+									<a href="#tab1">A行程</a>
+								</li>
+								<li>
+									<a href="#tab2">B行程</a>
+								</li>
+								<li>
+									<a href="#tab3">C行程</a>
+								</li>
+								<li>
+									<a href="#tab4">D行程</a>
+								</li>
+
+							</ul>
+
+							<div class="am-tabs-bd">
+								<div class="am-tab-panel am-fade am-in am-active" id="tab1">
+									<div class="am-tabs t-tab2" data-am-tabs>
+										<ul class="am-tabs-nav am-nav am-nav-tabs tab-2">
+											<li class="am-active ">
+												<a href="#tab21">
+													<span class="tab2-box t-act">
+												6日行程
+											</span>
+
+												</a>
+											</li>
+											<li>
+												<a href="#tab22">
+													<span class="tab2-box">
+												费用须知
+											</span>
+												</a>
+											</li>
+
+										</ul>
+
+										<div class="am-tabs-bd">
+											<div class="am-tab-panel am-fade am-in am-active" id="tab21">
+												<div class="t-days">
+													<p>行程天数：<span>6天5晚</span></p>
+													<p>适用团期：<span>2017-10-05,2017-10-12</span></p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第1天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													北京
+													<i class="iconfont">&#xe618;</i>
+													新千岁
+													<i class="iconfont">&#xe6a2;</i>
+													富良野
+												</span>
+													</p>
+													<p style="color: #666666;">航班信息：
+														<br /> 航班号：169 起飞时间：08：00 到达时间:12：50
+														<br />
+														<br />
+														<span class="am-text-truncate t-intro1">05:00从首都国际机场出发，乘坐国际航班飞往日本北海道新千岁机场。抵达后乘车前往富良野，晚上特别安排入住新富良野王子酒店，享用豪华晚餐后，您可以前往精灵小木屋，选购一件独特的纪念品，您可以前往酒店内由作家仓本聪创作的电视剧中梦幻咖啡屋-“森の时计”咖啡屋，一边研磨咖啡豆，一边享受森林美景，将美丽的风景与日本的文化意蕴深深融合，体验旅途的温馨和美好，您还可以前往温泉大浴场，聆听潺潺流水，享受泡汤乐趣，开启美好旅程。</span>
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第2天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													
+													富良野
+													<i class="iconfont">&#xe6a2;</i>
+													札幌
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，前往浪漫花海富良野，在富田农场展望台眺望无垠的田园美景（不少于40分）， 后来到拓真馆，把不同季节、不同时间、不同角度把美瑛及富良野*漂亮的景色呈现给观众（不少于40分钟）。
+														<!--<br />
+											<br />-->
+														<!--<span class="am-text-truncate t-intro1">05:00从首都国际机场出发，乘坐国际航班飞往日本北海道新千岁机场。抵达后乘车前往富良野，晚上特别安排入住新富良野王子酒店，享用豪华晚餐后，您可以前往精灵小木屋，选购一件独特的纪念品，您可以前往酒店内由作家仓本聪创作的电视剧中梦幻咖啡屋-“森の时计”咖啡屋，一边研磨咖啡豆，一边享受森林美景，将美丽的风景与日本的文化意蕴深深融合，体验旅途的温馨和美好，您还可以前往温泉大浴场，聆听潺潺流水，享受泡汤乐趣，开启美好旅程。</span>-->
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第3天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													札幌
+													<i class="am-icon-arrow-right"></i>
+													大沼
+													<i class="iconfont">&#xe6a2;</i>
+													函馆
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，乘车前往洞爷湖， ★遇见红叶：《洞爷湖展望台》約九月下旬～十月中旬，之后驱车前往洞爷湖展望台，眺望静谧美丽的湖景（不少于20分钟）。来到昭和新山，距离观察火山活动（不少于30分钟），并在熊牧场内与憨态可掬的棕熊共度欢乐时光（不少于30分钟）。
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第4天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													函馆
+													<i class="iconfont">&#xe6a2;</i>
+													洞爷湖
+													<i class="iconfont">&#xe6a2;</i>
+													留寿都
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，乘车前往洞爷湖， ★遇见红叶：《洞爷湖展望台》約九月下旬～十月中旬，之后驱车前往洞爷湖展望台，眺望静谧美丽的湖景（不少于20分钟）。来到昭和新山，距离观察火山活动（不少于30分钟），并在熊牧场内与憨态可掬的棕熊共度欢乐时光（不少于30分钟）。
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第5天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													留寿都
+													<i class="iconfont">&#xe618;</i>
+													小樽
+													<i class="am-icon-arrow-right"></i>
+													札幌
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，乘车前往电影《情书》的拍摄地、浪漫城市—小樽，在小樽运河边悠闲的漫步（不少于20分钟），参观北一硝子馆欣赏精美的玻璃工艺品，八音盒馆感受浪漫气息（不少于60分钟）。
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第6天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													札幌
+													<i class="iconfont">&#xe618;</i>
+													北京
+													<!--<i class="iconfont">&#xe6a2;</i>
+													富良野-->
+												</span>
+													</p>
+													<p style="color: #666666;">航班信息：
+														<br /> 航班号：170 起飞时间：13：50 到达时间:17：05
+														<br />
+														<br />
+														<span class="am-text-truncate t-intro1">08：00酒店早餐后，前往奥特莱斯自由观光（不少于60分钟），随后乘车前往新千岁机场，搭乘国际航班回到北京，结束美妙的日本之旅。</span>
+													</p>
+												</div>
+												<div class="det">
+													<span><i class="iconfont">&#xe60b;</i>&nbsp;&nbsp;详细行程&nbsp;&nbsp;&nbsp;&nbsp;<i class="am-icon-chevron-right"></i></span>
+												</div>
+
+											</div>
+
+											<div class="am-tab-panel am-fade" id="tab22">
+												<div class="money-1">
+													<span class="tab-conctnt2-1"><i class="iconfont">&#xe6ce;</i>&nbsp;费用包含</span>
+													<p style="color: #666666; margin-top: 15px;">北京/日本往返国际机票团队经济舱费用，含机场建设税
+														<br /> 行程所示酒店标准双人间，温泉酒店二人间
+														<br /> 境外旅游巴士费用及日籍司机服务（根据实际收客人数，适当调整车型）
+														<br /> 境外司导及领队服务费300元/人
+														<br /> 行程内所列用餐
+														<br /> 行程中所列景点门票
+														<br /> 团队旅游签证费用
+													</p>
+												</div>
+												<div class="money-2">
+													<span class="tab-conctnt2-1"><i class="iconfont">&#xe6ce;</i>&nbsp;费用不包含</span>
+													<p style="color: #666666; margin-top: 15px;">
+														护照费用
+														<br /> 洗衣，理发，电话，传真，饮料，烟酒，洗熨、付费电视，行李搬运等境外个人消费费用
+														<br /> 旅游者因违约、自身过错、自由活动期间内行为或自身疾病引起的人身和财产损失
+														<br /> 服务包含项目未提到的其它一切费用
+
+													</p>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+
+								<div class="am-tab-panel am-fade" id="tab2">
+									<div class="am-tabs t-tab2" data-am-tabs>
+										<ul class="am-tabs-nav am-nav am-nav-tabs tab-2">
+											<li class="am-active ">
+												<a href="#tab21">
+													<span class="tab2-box  t-act">
+												6日行程
+											</span>
+
+												</a>
+											</li>
+											<li>
+												<a href="#tab22">
+													<span class="tab2-box">
+												费用须知
+											</span>
+												</a>
+											</li>
+
+										</ul>
+
+										<div class="am-tabs-bd">
+											<div class="am-tab-panel am-fade am-in am-active" id="tab21">
+												<div class="t-days">
+													<p>行程天数：<span>6天5晚</span></p>
+													<p>适用团期：<span>2017-10-05,2017-10-12</span></p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第1天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													北京
+													<i class="iconfont">&#xe618;</i>
+													新千岁
+													<i class="iconfont">&#xe6a2;</i>
+													富良野
+												</span>
+													</p>
+													<p style="color: #666666;">航班信息：
+														<br /> 航班号：169 起飞时间：08：00 到达时间:12：50
+														<br />
+														<br />
+														<span class="am-text-truncate t-intro1">05:00从首都国际机场出发，乘坐国际航班飞往日本北海道新千岁机场。抵达后乘车前往富良野，晚上特别安排入住新富良野王子酒店，享用豪华晚餐后，您可以前往精灵小木屋，选购一件独特的纪念品，您可以前往酒店内由作家仓本聪创作的电视剧中梦幻咖啡屋-“森の时计”咖啡屋，一边研磨咖啡豆，一边享受森林美景，将美丽的风景与日本的文化意蕴深深融合，体验旅途的温馨和美好，您还可以前往温泉大浴场，聆听潺潺流水，享受泡汤乐趣，开启美好旅程。</span>
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第2天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													
+													富良野
+													<i class="iconfont">&#xe6a2;</i>
+													札幌
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，前往浪漫花海富良野，在富田农场展望台眺望无垠的田园美景（不少于40分）， 后来到拓真馆，把不同季节、不同时间、不同角度把美瑛及富良野*漂亮的景色呈现给观众（不少于40分钟）。
+														<!--<br />
+											<br />-->
+														<!--<span class="am-text-truncate t-intro1">05:00从首都国际机场出发，乘坐国际航班飞往日本北海道新千岁机场。抵达后乘车前往富良野，晚上特别安排入住新富良野王子酒店，享用豪华晚餐后，您可以前往精灵小木屋，选购一件独特的纪念品，您可以前往酒店内由作家仓本聪创作的电视剧中梦幻咖啡屋-“森の时计”咖啡屋，一边研磨咖啡豆，一边享受森林美景，将美丽的风景与日本的文化意蕴深深融合，体验旅途的温馨和美好，您还可以前往温泉大浴场，聆听潺潺流水，享受泡汤乐趣，开启美好旅程。</span>-->
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第3天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													札幌
+													<i class="am-icon-arrow-right"></i>
+													大沼
+													<i class="iconfont">&#xe6a2;</i>
+													函馆
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，乘车前往洞爷湖， ★遇见红叶：《洞爷湖展望台》約九月下旬～十月中旬，之后驱车前往洞爷湖展望台，眺望静谧美丽的湖景（不少于20分钟）。来到昭和新山，距离观察火山活动（不少于30分钟），并在熊牧场内与憨态可掬的棕熊共度欢乐时光（不少于30分钟）。
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第4天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													函馆
+													<i class="iconfont">&#xe6a2;</i>
+													洞爷湖
+													<i class="iconfont">&#xe6a2;</i>
+													留寿都
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，乘车前往洞爷湖， ★遇见红叶：《洞爷湖展望台》約九月下旬～十月中旬，之后驱车前往洞爷湖展望台，眺望静谧美丽的湖景（不少于20分钟）。来到昭和新山，距离观察火山活动（不少于30分钟），并在熊牧场内与憨态可掬的棕熊共度欢乐时光（不少于30分钟）。
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第5天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													留寿都
+													<i class="iconfont">&#xe618;</i>
+													小樽
+													<i class="am-icon-arrow-right"></i>
+													札幌
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，乘车前往电影《情书》的拍摄地、浪漫城市—小樽，在小樽运河边悠闲的漫步（不少于20分钟），参观北一硝子馆欣赏精美的玻璃工艺品，八音盒馆感受浪漫气息（不少于60分钟）。
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第6天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													札幌
+													<i class="iconfont">&#xe618;</i>
+													北京
+													<!--<i class="iconfont">&#xe6a2;</i>
+													富良野-->
+												</span>
+													</p>
+													<p style="color: #666666;">航班信息：
+														<br /> 航班号：170 起飞时间：13：50 到达时间:17：05
+														<br />
+														<br />
+														<span class="am-text-truncate t-intro1">08：00酒店早餐后，前往奥特莱斯自由观光（不少于60分钟），随后乘车前往新千岁机场，搭乘国际航班回到北京，结束美妙的日本之旅。</span>
+													</p>
+												</div>
+												<div class="det">
+													<span><i class="iconfont">&#xe60b;</i>&nbsp;&nbsp;详细行程&nbsp;&nbsp;&nbsp;&nbsp;<i class="am-icon-chevron-right"></i></span>
+												</div>
+
+											</div>
+
+											<div class="am-tab-panel am-fade" id="tab22">
+												<div class="money-1">
+													<span class="tab-conctnt2-1"><i class="iconfont">&#xe6ce;</i>&nbsp;费用包含</span>
+													<p style="color: #666666; margin-top: 15px;">北京/日本往返国际机票团队经济舱费用，含机场建设税
+														<br /> 行程所示酒店标准双人间，温泉酒店二人间
+														<br /> 境外旅游巴士费用及日籍司机服务（根据实际收客人数，适当调整车型）
+														<br /> 境外司导及领队服务费300元/人
+														<br /> 行程内所列用餐
+														<br /> 行程中所列景点门票
+														<br /> 团队旅游签证费用
+													</p>
+												</div>
+												<div class="money-2">
+													<span class="tab-conctnt2-1"><i class="iconfont">&#xe6ce;</i>&nbsp;费用不包含</span>
+													<p style="color: #666666; margin-top: 15px;">
+														护照费用
+														<br /> 洗衣，理发，电话，传真，饮料，烟酒，洗熨、付费电视，行李搬运等境外个人消费费用
+														<br /> 旅游者因违约、自身过错、自由活动期间内行为或自身疾病引起的人身和财产损失
+														<br /> 服务包含项目未提到的其它一切费用
+
+													</p>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+								<div class="am-tab-panel am-fade" id="tab3">
+									<div class="am-tabs t-tab2" data-am-tabs>
+										<ul class="am-tabs-nav am-nav am-nav-tabs tab-2">
+											<li class=" am-active">
+												<a href="#tab21">
+													<span class="tab2-box t-act">
+												6日行程
+											</span>
+
+												</a>
+											</li>
+											<li>
+												<a href="#tab22">
+													<span class="tab2-box">
+												费用须知
+											</span>
+												</a>
+											</li>
+
+										</ul>
+
+										<div class="am-tabs-bd">
+											<div class="am-tab-panel am-fade am-in am-active" id="tab21">
+												<div class="t-days">
+													<p>行程天数：<span>6天5晚</span></p>
+													<p>适用团期：<span>2017-10-05,2017-10-12</span></p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第1天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													北京
+													<i class="iconfont">&#xe618;</i>
+													新千岁
+													<i class="iconfont">&#xe6a2;</i>
+													富良野
+												</span>
+													</p>
+													<p style="color: #666666;">航班信息：
+														<br /> 航班号：169 起飞时间：08：00 到达时间:12：50
+														<br />
+														<br />
+														<span class="am-text-truncate t-intro1">05:00从首都国际机场出发，乘坐国际航班飞往日本北海道新千岁机场。抵达后乘车前往富良野，晚上特别安排入住新富良野王子酒店，享用豪华晚餐后，您可以前往精灵小木屋，选购一件独特的纪念品，您可以前往酒店内由作家仓本聪创作的电视剧中梦幻咖啡屋-“森の时计”咖啡屋，一边研磨咖啡豆，一边享受森林美景，将美丽的风景与日本的文化意蕴深深融合，体验旅途的温馨和美好，您还可以前往温泉大浴场，聆听潺潺流水，享受泡汤乐趣，开启美好旅程。</span>
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第2天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													
+													富良野
+													<i class="iconfont">&#xe6a2;</i>
+													札幌
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，前往浪漫花海富良野，在富田农场展望台眺望无垠的田园美景（不少于40分）， 后来到拓真馆，把不同季节、不同时间、不同角度把美瑛及富良野*漂亮的景色呈现给观众（不少于40分钟）。
+														<!--<br />
+											<br />-->
+														<!--<span class="am-text-truncate t-intro1">05:00从首都国际机场出发，乘坐国际航班飞往日本北海道新千岁机场。抵达后乘车前往富良野，晚上特别安排入住新富良野王子酒店，享用豪华晚餐后，您可以前往精灵小木屋，选购一件独特的纪念品，您可以前往酒店内由作家仓本聪创作的电视剧中梦幻咖啡屋-“森の时计”咖啡屋，一边研磨咖啡豆，一边享受森林美景，将美丽的风景与日本的文化意蕴深深融合，体验旅途的温馨和美好，您还可以前往温泉大浴场，聆听潺潺流水，享受泡汤乐趣，开启美好旅程。</span>-->
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第3天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													札幌
+													<i class="am-icon-arrow-right"></i>
+													大沼
+													<i class="iconfont">&#xe6a2;</i>
+													函馆
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，乘车前往洞爷湖， ★遇见红叶：《洞爷湖展望台》約九月下旬～十月中旬，之后驱车前往洞爷湖展望台，眺望静谧美丽的湖景（不少于20分钟）。来到昭和新山，距离观察火山活动（不少于30分钟），并在熊牧场内与憨态可掬的棕熊共度欢乐时光（不少于30分钟）。
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第4天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													函馆
+													<i class="iconfont">&#xe6a2;</i>
+													洞爷湖
+													<i class="iconfont">&#xe6a2;</i>
+													留寿都
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，乘车前往洞爷湖， ★遇见红叶：《洞爷湖展望台》約九月下旬～十月中旬，之后驱车前往洞爷湖展望台，眺望静谧美丽的湖景（不少于20分钟）。来到昭和新山，距离观察火山活动（不少于30分钟），并在熊牧场内与憨态可掬的棕熊共度欢乐时光（不少于30分钟）。
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第5天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													留寿都
+													<i class="iconfont">&#xe618;</i>
+													小樽
+													<i class="am-icon-arrow-right"></i>
+													札幌
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，乘车前往电影《情书》的拍摄地、浪漫城市—小樽，在小樽运河边悠闲的漫步（不少于20分钟），参观北一硝子馆欣赏精美的玻璃工艺品，八音盒馆感受浪漫气息（不少于60分钟）。
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第6天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													札幌
+													<i class="iconfont">&#xe618;</i>
+													北京
+													<!--<i class="iconfont">&#xe6a2;</i>
+													富良野-->
+												</span>
+													</p>
+													<p style="color: #666666;">航班信息：
+														<br /> 航班号：170 起飞时间：13：50 到达时间:17：05
+														<br />
+														<br />
+														<span class="am-text-truncate t-intro1">08：00酒店早餐后，前往奥特莱斯自由观光（不少于60分钟），随后乘车前往新千岁机场，搭乘国际航班回到北京，结束美妙的日本之旅。</span>
+													</p>
+												</div>
+												<div class="det">
+													<span><i class="iconfont">&#xe60b;</i>&nbsp;&nbsp;详细行程&nbsp;&nbsp;&nbsp;&nbsp;<i class="am-icon-chevron-right"></i></span>
+												</div>
+
+											</div>
+
+											<div class="am-tab-panel am-fade" id="tab22">
+												<div class="money-1">
+													<span class="tab-conctnt2-1"><i class="iconfont">&#xe6ce;</i>&nbsp;费用包含</span>
+													<p style="color: #666666; margin-top: 15px;">北京/日本往返国际机票团队经济舱费用，含机场建设税
+														<br /> 行程所示酒店标准双人间，温泉酒店二人间
+														<br /> 境外旅游巴士费用及日籍司机服务（根据实际收客人数，适当调整车型）
+														<br /> 境外司导及领队服务费300元/人
+														<br /> 行程内所列用餐
+														<br /> 行程中所列景点门票
+														<br /> 团队旅游签证费用
+													</p>
+												</div>
+												<div class="money-2">
+													<span class="tab-conctnt2-1"><i class="iconfont">&#xe6ce;</i>&nbsp;费用不包含</span>
+													<p style="color: #666666; margin-top: 15px;">
+														护照费用
+														<br /> 洗衣，理发，电话，传真，饮料，烟酒，洗熨、付费电视，行李搬运等境外个人消费费用
+														<br /> 旅游者因违约、自身过错、自由活动期间内行为或自身疾病引起的人身和财产损失
+														<br /> 服务包含项目未提到的其它一切费用
+
+													</p>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+								<div class="am-tab-panel am-fade" id="tab4">
+									<div class="am-tabs t-tab2" data-am-tabs>
+										<ul class="am-tabs-nav am-nav am-nav-tabs tab-2">
+											<li class="am-active ">
+												<a href="#tab21">
+													<span class="tab2-box  t-act">
+												6日行程
+											</span>
+
+												</a>
+											</li>
+											<li>
+												<a href="#tab22"><span class="tab2-box">
+												费用须知
+											</span></a>
+											</li>
+
+										</ul>
+
+										<div class="am-tabs-bd">
+											<div class="am-tab-panel am-fade am-in am-active" id="tab21">
+												<div class="t-days">
+													<p>行程天数：<span>6天5晚</span></p>
+													<p>适用团期：<span>2017-10-05,2017-10-12</span></p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第1天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													北京
+													<i class="iconfont">&#xe618;</i>
+													新千岁
+													<i class="iconfont">&#xe6a2;</i>
+													富良野
+												</span>
+													</p>
+													<p style="color: #666666;">航班信息：
+														<br /> 航班号：169 起飞时间：08：00 到达时间:12：50
+														<br />
+														<br />
+														<span class="am-text-truncate t-intro1">05:00从首都国际机场出发，乘坐国际航班飞往日本北海道新千岁机场。抵达后乘车前往富良野，晚上特别安排入住新富良野王子酒店，享用豪华晚餐后，您可以前往精灵小木屋，选购一件独特的纪念品，您可以前往酒店内由作家仓本聪创作的电视剧中梦幻咖啡屋-“森の时计”咖啡屋，一边研磨咖啡豆，一边享受森林美景，将美丽的风景与日本的文化意蕴深深融合，体验旅途的温馨和美好，您还可以前往温泉大浴场，聆听潺潺流水，享受泡汤乐趣，开启美好旅程。</span>
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第2天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													
+													富良野
+													<i class="iconfont">&#xe6a2;</i>
+													札幌
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，前往浪漫花海富良野，在富田农场展望台眺望无垠的田园美景（不少于40分）， 后来到拓真馆，把不同季节、不同时间、不同角度把美瑛及富良野*漂亮的景色呈现给观众（不少于40分钟）。
+														<!--<br />
+											<br />-->
+														<!--<span class="am-text-truncate t-intro1">05:00从首都国际机场出发，乘坐国际航班飞往日本北海道新千岁机场。抵达后乘车前往富良野，晚上特别安排入住新富良野王子酒店，享用豪华晚餐后，您可以前往精灵小木屋，选购一件独特的纪念品，您可以前往酒店内由作家仓本聪创作的电视剧中梦幻咖啡屋-“森の时计”咖啡屋，一边研磨咖啡豆，一边享受森林美景，将美丽的风景与日本的文化意蕴深深融合，体验旅途的温馨和美好，您还可以前往温泉大浴场，聆听潺潺流水，享受泡汤乐趣，开启美好旅程。</span>-->
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第3天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													札幌
+													<i class="am-icon-arrow-right"></i>
+													大沼
+													<i class="iconfont">&#xe6a2;</i>
+													函馆
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，乘车前往洞爷湖， ★遇见红叶：《洞爷湖展望台》約九月下旬～十月中旬，之后驱车前往洞爷湖展望台，眺望静谧美丽的湖景（不少于20分钟）。来到昭和新山，距离观察火山活动（不少于30分钟），并在熊牧场内与憨态可掬的棕熊共度欢乐时光（不少于30分钟）。
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第4天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													函馆
+													<i class="iconfont">&#xe6a2;</i>
+													洞爷湖
+													<i class="iconfont">&#xe6a2;</i>
+													留寿都
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，乘车前往洞爷湖， ★遇见红叶：《洞爷湖展望台》約九月下旬～十月中旬，之后驱车前往洞爷湖展望台，眺望静谧美丽的湖景（不少于20分钟）。来到昭和新山，距离观察火山活动（不少于30分钟），并在熊牧场内与憨态可掬的棕熊共度欢乐时光（不少于30分钟）。
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第5天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													留寿都
+													<i class="iconfont">&#xe618;</i>
+													小樽
+													<i class="am-icon-arrow-right"></i>
+													札幌
+												</span>
+													</p>
+													<p style="color: #666666;">
+														<br /> 08:00酒店早餐后，乘车前往电影《情书》的拍摄地、浪漫城市—小樽，在小樽运河边悠闲的漫步（不少于20分钟），参观北一硝子馆欣赏精美的玻璃工艺品，八音盒馆感受浪漫气息（不少于60分钟）。
+													</p>
+												</div>
+												<div class="day-box">
+													<div class="day-sign">
+														<i class="iconfont">&#xe629;</i>
+													</div>
+													<p class="day-num">第6天</p>
+													<p style="text-align: center; margin: 15px 0;">
+														<span class="transport">
+													札幌
+													<i class="iconfont">&#xe618;</i>
+													北京
+													<!--<i class="iconfont">&#xe6a2;</i>
+													富良野-->
+												</span>
+													</p>
+													<p style="color: #666666;">航班信息：
+														<br /> 航班号：170 起飞时间：13：50 到达时间:17：05
+														<br />
+														<br />
+														<span class="am-text-truncate t-intro1">08：00酒店早餐后，前往奥特莱斯自由观光（不少于60分钟），随后乘车前往新千岁机场，搭乘国际航班回到北京，结束美妙的日本之旅。</span>
+													</p>
+												</div>
+												<div class="det">
+													<span><i class="iconfont">&#xe60b;</i>&nbsp;&nbsp;详细行程&nbsp;&nbsp;&nbsp;&nbsp;<i class="am-icon-chevron-right"></i></span>
+												</div>
+
+											</div>
+
+											<div class="am-tab-panel am-fade" id="tab22">
+												<div class="money-1">
+													<span class="tab-conctnt2-1"><i class="iconfont">&#xe6ce;</i>&nbsp;费用包含</span>
+													<p style="color: #666666; margin-top: 15px;">北京/日本往返国际机票团队经济舱费用，含机场建设税
+														<br /> 行程所示酒店标准双人间，温泉酒店二人间
+														<br /> 境外旅游巴士费用及日籍司机服务（根据实际收客人数，适当调整车型）
+														<br /> 境外司导及领队服务费300元/人
+														<br /> 行程内所列用餐
+														<br /> 行程中所列景点门票
+														<br /> 团队旅游签证费用
+													</p>
+												</div>
+												<div class="money-2">
+													<span class="tab-conctnt2-1"><i class="iconfont">&#xe6ce;</i>&nbsp;费用不包含</span>
+													<p style="color: #666666; margin-top: 15px;">
+														护照费用
+														<br /> 洗衣，理发，电话，传真，饮料，烟酒，洗熨、付费电视，行李搬运等境外个人消费费用
+														<br /> 旅游者因违约、自身过错、自由活动期间内行为或自身疾病引起的人身和财产损失
+														<br /> 服务包含项目未提到的其它一切费用
+
+													</p>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<!--购买须知-->
+						<div class="t-y must">
+							<i class="iconfont t-y1">&#xe6d3;</i>&nbsp;购买须知
+							<a href="#" class="t-y2" style="float: right;">
+								&gt;
+							</a>
+						</div>
+						<!--签证信息-->
+						<div class="t-y must">
+							<i class="iconfont t-y1">&#xe63c;</i>&nbsp;签证信息
+							<a href="#" class="t-y2" style="float: right;">
+								&gt;
+							</a>
+						</div>
+						<!--线路点评-->
+						<div class="must" style="margin-bottom: 100px;">
+
+							<div class="t-y " style="padding-bottom: 5px;">
+								<i class="iconfont t-y1">&#xe5c9;</i>&nbsp;线路点评
+								<a href="#" class="t-y2" style="float: right;">
+									<span class="dinping">更多点评</span>&gt;
+								</a>
+							</div>
+							<!--评论-->
+							<div class="cover-box">
+								<div class="c-top">
+									<div class="tx-1">
+										<div class="tx fl">
+											<img src="img/t-m-1.jpg" />
+
+										</div>
+										<div class="tx-d">
+											v1
+										</div>
+										<div class="tx-name fl">
+											<p class="tx-n-1">姜子辰</p>
+											<p class="tx-n-2"><i class="am-icon-clock-o"></i>2017-08-10</p>
+										</div>
+										<div class="tx-like fr">
+											<div class="tx-p-bg fl">
+												<i class="iconfont" style="color: #cccccc;">&#xe630;</i>
+											</div>
+											<div class="manyi fl">
+												&nbsp;&nbsp;<span style="font-size: 12px;">满意度</span>&nbsp;&nbsp;<span style="color: #ff485e;">100%</span>
+											</div>
+											<div class="clear">
+
+											</div>
+
+										</div>
+										<div class="clear">
+
+										</div>
+									</div>
+									<p class="cover-1">北海道线路行程设计的合理，游玩时间和购物时间安排的恰到好处；安排的早中晚餐非常丰盛；导游解说的风景与当地的风土人情非常详细负责；总之这次行程真的很赞！</p>
+									<div class="tx-cover">
+										<i class="am-icon-thumbs-o-up"></i>
+										<span class="tx-c-1">酒店满意</span>
+										<span class="tx-c-1">交通满意</span>
+										<span class="tx-c-1">客服满意</span>
+										<span class="tx-c-1">导游满意</span>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!--</template>-->
+
+				<!--底部-->
+				<div class="bottom">
+					<span class="t-bottom-1 fl">
+				<p class="t-collect-1"><i class="iconfont collect" >&#xe502;</i></p>
+				<p class="t-collect-2 collect-txt">收藏</p>
+			</span>
+					<span class="t-bottom-2 fl ">
+				丨
+			</span>
+					<span class="t-bottom-3 fl">
+				<p class="t-collect-1"><i class="iconfont">&#xe603;</i></p>
+				<p class="t-collect-2">电话咨询</p>
+			</span>
+					<span class="t-bottom-2 fl ">
+				丨
+			</span>
+					<span class="t-bottom-3 fl">
+				<p class="t-collect-1"><i class="iconfont">&#xe636;</i></p>
+				<p class="t-collect-2">在线咨询</p>
+			</span>
+					<a :href="href2+list._id">
+						<span class="t-bottom-4 fr">
+				立即预订
+			</span></a>
+				</div>
+			</form>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<!--<script src="js/jquery.min.js"></script>-->
+	<!--<![endif]-->
+	<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+	<script src="js/amazeui.min.js"></script>
+	<script src="js/axios.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#deta",
+			data: {
+				href2: "../mobile/datechoose.html?_id=",
+				list: []
+			},
+			mounted: function() {
+
+				//获取参数id
+				var id = GetRequest()._id;
+				//axios方法
+				axios.get('/users/getGoodsById/?_id=' + id).then(function(response) {
+					app.list = response.data.data;
+					console.log(app.list)
+				});
+				var data = "id=" + id;
+				//				setInterval(function () {
+
+				$.post('/users/serCollection/', data, function(result) {
+					if(result.status) {
+						$(".collect").addClass("t-active");
+						$(".collect-txt").text("已收藏");
+
+						//收藏
+						var  m=1
+						$(".t-bottom-1").click(function() {
+							m++;
+							if(m % 2 == 1) {
+								//					
+								var id = GetRequest()._id;
+								//发送POST请求
+								//					var data = serializeObject($('form'));
+								var data = "phone=" + sessionStorage.phone + "&id=" + id + "&isAct=" + true;
+								//						data.slideImages = arr;
+								console.log(data);
+								$.post('/users/collection/', data, function(result) {
+									if(result.status) {
+										$(".collect").addClass("t-active");
+										$(".collect-txt").text("已收藏");
+									}
+								});
+
+							} else {
+								//					$(".collect").removeClass("t-active");
+								//					$(".collect-txt").text("收藏");
+								var id = GetRequest()._id;
+								//post请求取消收藏（数据库里删除对应数据）
+								var data = "id=" + id;
+								$.post('/users/delCollection/', data, function(result) {
+									if(!result.status) {
+										$(".collect").removeClass("t-active");
+										$(".collect-txt").text("收藏");
+									}
+								});
+
+							}
+						});
+
+					} else {
+						$(".collect").removeClass("t-active");
+						$(".collect-txt").text("收藏");
+						var  m=0
+						$(".t-bottom-1").click(function() {
+							m++;
+							if(m % 2 == 1) {
+								//					
+								var id = GetRequest()._id;
+								//发送POST请求
+								//					var data = serializeObject($('form'));
+								var data = "phone=" + sessionStorage.phone + "&id=" + id + "&isAct=" + true;
+								//						data.slideImages = arr;
+								console.log(data);
+								$.post('/users/collection/', data, function(result) {
+									if(result.status) {
+										$(".collect").addClass("t-active");
+										$(".collect-txt").text("已收藏");
+									}
+								});
+
+							} else {
+								//					$(".collect").removeClass("t-active");
+								//					$(".collect-txt").text("收藏");
+								var id = GetRequest()._id;
+								//post请求取消收藏（数据库里删除对应数据）
+								var data = "id=" + id;
+								$.post('/users/delCollection/', data, function(result) {
+									if(!result.status) {
+										$(".collect").removeClass("t-active");
+										$(".collect-txt").text("收藏");
+									}
+								});
+
+							}
+						});
+					}
+				});
+				//				},100)
+				//JQ方法
+				//				$.get("/users/getGoodsById/?_id=" + id, function(result) {
+				//					app.list = result.data;
+				//
+				//				});
+
+			},
+			//			updated:function () {
+			//				$(".am-slider").flexslider({
+			//					animation:"slide",
+			//					slideshow:false
+			//				})
+			//			}
+		})
+	</script>
+	<script type="text/javascript">
+		var swiper1 = new Swiper('#slider1', {
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			autoplay: 2000,
+			loop: true,
+			speed: 500
+		});
+		var swiper2 = new Swiper('#slider2', {
+			pagination: '.swiper-pagination',
+			slidesPerView: 4,
+			paginationClickable: true,
+			spaceBetween: 30,
+			freeMode: true
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			//顶部
+			$(window).scroll(function(e) {
+				var a = $(window).scrollTop();
+
+				if(a == 0) {
+					$(".top").css("display", "none")
+
+				} else {
+					$(".top").css("display", "block")
+				}
+			});
+
+			//右上角列表
+			var m = 0;
+			$(".m-list").click(function() {
+				m++;
+				if(m % 2 == 1) {
+					$(".more-list").css("display", "block");
+					$(".more-s").css("display", "block");
+				} else {
+					$(".more-list").css("display", "none");
+					$(".more-s").css("display", "none");
+				}
+			});
+
+			$(".tab2-box").click(function() {
+				$(".tab2-box").removeClass("t-act");
+				$(this).addClass("t-act");
+			})
+		})
+	</script>
+	<script type="text/javascript">
+		//表单序列化为对象
+		function serializeObject(form) {
+			var o = {};
+			$.each(form.serializeArray(), function(index) {
+				if(o[this['name']]) {
+					o[this['name']] = o[this['name']] + ";" + this['value'];
+				} else {
+					o[this['name']] = this['value'];
+				}
+			});
+			return o;
+		}
+	</script>
+
+</html>

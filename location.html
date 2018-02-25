@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>选择城市</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<!--<link rel="icon" type="image/png" href="i/favicon.png">-->
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<!--<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<!--<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/location.css" />
+		<link rel="stylesheet" type="text/css" href="css/yzfonts.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />-->
+	</head>
+
+	<body>
+		<!--顶部-->
+		<div class="top">
+			<div class="back1">
+				<a href="javascript:;" onClick="history.back();"><i class="iconfont icon-back"></i></a>
+			</div>
+			<span>选择城市</span>
+
+		</div>
+		<!--搜索框-->
+		<div class="am-container">
+			<div class="search">
+				<i class="am-icon-search search-i"></i>
+				<input type="text" class="input-search" name="" id="" value="" placeholder="输入城市名称或首字母查询" />
+			</div>
+		</div>
+		<!--当前选择-->
+		<div class="search-now">
+			当前选择城市：<span>北京</span>
+		</div>
+		<!--热门城市-->
+
+		<div class="con-b1">
+			<div class="hot-title">热门出发城市：</div>
+			<ul class="am-avg-sm-4 am-thumbnails">
+				<li>
+					<a href="index.html">
+						<div class="con-b11">
+							北京
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<div class="con-b11">
+							上海
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<div class="con-b11">
+							天津
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<div class="con-b11">
+							杭州
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="am-avg-sm-4 am-thumbnails">
+				<li>
+					<a href="index.html">
+						<div class="con-b11">
+							武汉
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<div class="con-b11">
+							南京
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<div class="con-b11">
+							厦门
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="index.html">
+						<div class="con-b11">
+							沈阳
+						</div>
+					</a>
+				</li>
+			</ul>
+			<ul class="am-avg-sm-4 am-thumbnails">
+				<li>
+					<a href="index.html">
+						<div class="con-b11">
+							成都
+						</div>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		<!--城市列表-->
+		<div class="city-list">
+			<!--B-->
+			<div class="c-title" id="b">
+				B
+			</div>
+			<div class="city-box">
+				<ul class="am-list">
+					<li>
+						<a href="index.html">北京</a>
+					</li>
+
+				</ul>
+			</div>
+			<!--C-->
+			<div class="c-title" id="c">
+				C
+			</div>
+			<div class="city-box">
+				<ul class="am-list">
+					<li>
+						<a href="index.html">成都</a>
+					</li>
+					<li>
+						<a href="index.html">长春</a>
+					</li>
+					<li>
+						<a href="index.html">常州</a>
+					</li>
+					<li>
+						<a href="index.html">长沙</a>
+					</li>
+					<li>
+						<a href="index.html">重庆</a>
+					</li>
+
+				</ul>
+			</div>
+			<!--D-->
+			<div class="c-title" id="d">
+				D
+			</div>
+			<div class="city-box">
+				<ul class="am-list">
+					<li>
+						<a href="index.html">大连</a>
+					</li>
+
+				</ul>
+			</div>
+			<!--H-->
+			<div class="c-title" id="h">
+				H
+			</div>
+			<div class="city-box">
+				<ul class="am-list">
+					<li>
+						<a href="index.html">杭州</a>
+					</li>
+					<li>
+						<a href="index.html">合肥</a>
+					</li>
+					<li>
+						<a href="index.html">哈尔滨</a>
+					</li>
+
+				</ul>
+			</div>
+			<!--J-->
+			<div class="c-title" id="j">
+				J
+			</div>
+			<div class="city-box">
+				<ul class="am-list">
+					<li>
+						<a href="index.html">济南</a>
+					</li>
+
+				</ul>
+			</div>
+			<!--N-->
+			<div class="c-title" id="n">
+				N
+			</div>
+			<div class="city-box">
+				<ul class="am-list">
+					<li>
+						<a href="index.html">南京</a>
+					</li>
+					<li>
+						<a href="index.html">宁波</a>
+					</li>
+					<li>
+						<a href="index.html">南昌</a>
+					</li>
+
+				</ul>
+			</div>
+			<!--Q-->
+			<div class="c-title" id="q">
+				Q
+			</div>
+			<div class="city-box">
+				<ul class="am-list">
+					<li>
+						<a href="index.html">青岛</a>
+					</li>
+
+				</ul>
+			</div>
+			<!--S-->
+			<div class="c-title" id="s">
+				S
+			</div>
+			<div class="city-box">
+				<ul class="am-list">
+					<li>
+						<a href="index.html">上海</a>
+					</li>
+					<li>
+						<a href="index.html">沈阳</a>
+					</li>
+					<li>
+						<a href="index.html">石家庄</a>
+					</li>
+					<li>
+						<a href="index.html">苏州</a>
+					</li>
+
+				</ul>
+			</div>
+			<!--T-->
+			<div class="c-title" id="t">
+				T
+			</div>
+			<div class="city-box">
+				<ul class="am-list">
+					<li>
+						<a href="index.html">天津</a>
+					</li>
+					<li>
+						<a href="index.html">太原</a>
+					</li>
+					<li>
+						<a href="index.html">唐山</a>
+					</li>
+
+				</ul>
+			</div>
+			<!--W-->
+			<div class="c-title" id="w">
+				W
+			</div>
+			<div class="city-box">
+				<ul class="am-list">
+					<li>
+						<a href="index.html">武汉</a>
+					</li>
+					<li>
+						<a href="index.html">无锡</a>
+					</li>
+
+				</ul>
+			</div>
+			<!--X-->
+			<div class="c-title" id="x">
+				X
+			</div>
+			<div class="city-box">
+				<ul class="am-list">
+					<li>
+						<a href="index.html">厦门</a>
+					</li>
+					<li>
+						<a href="index.html">西安</a>
+					</li>
+
+				</ul>
+			</div>
+			<!--Z-->
+			<div class="c-title" id="z">
+				Z
+			</div>
+			<div class="city-box">
+				<ul class="am-list">
+					<li>
+						<a href="index.html">郑州</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		
+		<!--右侧定位导航栏-->
+		<div class="r-box">
+			<a href="#b">
+				<div class="l-sign">
+					B
+				</div>
+			</a>
+			<a href="#c">
+				<div class="l-sign">
+					C
+				</div>
+			</a>
+			<a href="#d">
+				<div class="l-sign">
+					D
+				</div>
+			</a>
+			<a href="#h">
+				<div class="l-sign">
+					H
+				</div>
+			</a>
+			<a href="#j">
+				<div class="l-sign">
+					J
+				</div>
+			</a>
+			<a href="#n">
+				<div class="l-sign">
+					N
+				</div>
+			</a>
+			<a href="#q">
+				<div class="l-sign">
+					Q
+				</div>
+			</a>
+			<a href="#s">
+				<div class="l-sign">
+					S
+				</div>
+			</a>
+			<a href="#t">
+				<div class="l-sign">
+					T
+				</div>
+			</a>
+			<a href="#w">
+				<div class="l-sign">
+					W
+				</div>
+			</a>
+			<a href="#x">
+				<div class="l-sign">
+					X
+				</div>
+			</a>
+			<a href="#z">
+				<div class="l-sign">
+					Z
+				</div>
+			</a>
+		</div>
+
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<!--<script src="js/jquery.min.js"></script>-->
+	<!--<![endif]-->
+	<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+	<script src="js/amazeui.min.js"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

@@ -1,0 +1,236 @@
+@charset "utf-8";
+.top {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 48px;
+	width: 100%;
+	z-index: 200;
+	text-align: center;
+	background-color: white;
+	/*display: none;*/
+	position: relative;
+	border-bottom: 1px solid #cccccc;
+}
+
+.back1 {
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	/*background: rgba(0,0,0,0.5);*/
+	z-index: 4;
+	line-height: 22px;
+	text-align: center;
+	color: #000;
+	font-size: 32px;
+}
+
+.back1 a {
+	color: #000;
+}
+
+.top span {
+	font-size: 20px;
+	line-height: 49px;
+	color: #000;
+}
+
+body {
+	background-color: #E5E5E5;
+}
+
+
+/*选项卡*/
+
+.am-nav>li {
+	width: 33%;
+	text-align: center;
+}
+
+.am-nav-tabs {
+	border-bottom: 0;
+}
+
+.am-tabs-bd {
+	border: 0;
+}
+
+.bgw {
+	background-color: white;
+	padding: 0 1rem;
+}
+
+.bgw a {
+	color: #333;
+}
+
+.am-nav-tabs>li.am-active>a,
+.am-nav-tabs>li.am-active>a:focus,
+.am-nav-tabs>li.am-active>a:hover {
+	border: 0;
+	border-bottom: 2px solid #ef858c;
+	color: #e5004f;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.of-add {
+	margin-top: 4px;
+	border-radius: 100%;
+	border: 1px solid #ccc;
+	width: 1.6rem;
+	height: 1.6rem;
+	text-align: center;
+	line-height: 1.5rem;
+}
+
+.people-add ,.address-add{
+	display: inline-block;
+	/*height: 3rem;*/
+	/*width: 11rem;*/
+	padding: 0.3rem 1rem;
+	border-radius: 8px;
+	background-color: white;
+	border: 1px solid #0099d9;
+	margin-bottom: 10px;
+}
+.am-field-valid{
+	box-shadow: 0 0 0 ;
+}
+.add-p {
+	font-size: 1.4rem;
+}
+.address-add .m-act {
+	background: #0099d9;
+	/*border: 1px solid transparent;*/
+	color: white;
+}
+.people-add .m-act {
+	background: #0099d9;
+	/*border: 1px solid transparent;*/
+	color: white;
+}
+
+.p-message {
+	padding: 1rem;
+	background-color: white;
+	color: #999;
+	font-size: 1.4rem;
+	position: relative;
+	margin-bottom: 1.5rem;
+}
+
+.p-name {
+	font-size: 1.5rem;
+	color: #333;
+}
+
+.am-tabs-bd .am-tab-panel {
+	padding: 10px 0 15px;
+}
+
+.p-message p {
+	margin: 0.2rem 0;
+}
+
+.rgi {
+	position: absolute;
+	right: 1rem;
+	top: 30%;
+	font-size: 2.4rem;
+}
+
+
+/*旅客信息添加*/
+
+.vister-add{
+	position: fixed;
+	z-index: 1000;
+	background: white;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: none;
+}
+.vister-add2{
+	background-color: #e5e5e5;
+	
+}
+.vister-name {
+	padding: 0.5rem 1.4rem;
+}
+
+.am-list>li {
+	border: 1px solid #e5e5e5;
+	border-left: 0;
+	border-right: 0;
+}
+
+.city-box {
+	padding: 0 2rem;
+	color: #666;
+	font-size: 1.3rem;
+	background-color: white;
+	margin-bottom: -1.5rem;
+}
+
+.v-name,
+.v-name2,
+.v-name-1,
+.v-name-2,
+.v-num,
+.v-num2,
+.v-date-1 {
+	border: 0;
+	text-align: right;
+	outline: 0;
+}
+.am-form-field,
+.v-name,
+.v-name2,
+.v-name-1,
+.v-name-2,
+.v-phone,
+.v-num,
+.v-phone2,
+.v-address,
+.v-country{
+	border: 0 !important;
+	text-align: right;
+	padding: 0 !important;
+	outline: 0;
+	width: 104% !important;
+}
+/*底部*/
+.bottom-v{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background: #e5004f;
+	color: white;
+	padding: 0.9rem 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.8rem;
+}
+.bottom-v3,.bottom-v2{
+	background: #e5004f;
+	color: white;
+	padding: 0.9rem 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.8rem;
+}

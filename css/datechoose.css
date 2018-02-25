@@ -1,0 +1,384 @@
+@charset "utf-8";
+body {
+	background-color: #f7f7f7;
+}
+
+.top {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 48px;
+	width: 100%;
+	z-index: 200;
+	text-align: center;
+	background: linear-gradient(to right, #FF2F60, #FF7759);
+	/*display: none;*/
+	/*position: relative;*/
+	border-bottom: 1px solid #f7f7f7;
+}
+
+.back1 {
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	/*background: rgba(0,0,0,0.5);*/
+	z-index: 4;
+	line-height: 22px;
+	text-align: center;
+	color: #ff485e;
+	font-size: 32px;
+}
+
+.back1 a {
+	color: #fff;
+}
+
+.top span {
+	font-size: 20px;
+	line-height: 49px;
+	color: #fff;
+}
+
+
+/*月份*/
+
+.date-bg {
+	height: 8rem;
+	margin-top: 48px;
+	text-align: center;
+	color: white;
+	background: linear-gradient(to right, #FF2F60, #FF7759);
+	position: relative;
+}
+.month-11{
+	position: absolute;
+	top: 1.6rem;
+	right: 3rem;
+	width: 7rem;
+	height: 3rem;
+	line-height: 2.8rem;
+	text-align: center;
+	border-radius: 15px;
+	color: white;
+	border: 1px solid #ffabb2;
+}
+.month-10{
+	position: absolute;
+	top: 1.6rem;
+	left: 3rem;
+	width: 7rem;
+	height: 3rem;
+	line-height: 2.8rem;
+	text-align: center;
+	border-radius: 15px;
+	color: white;
+	border: 1px solid #ffabb2;
+	display: none;
+}
+.d-bg1 {
+	font-size: 4rem;
+	height: 4rem;
+	display: inline-block;
+}
+
+.d-bg2 {
+	margin-left: -10px;
+	height: 4rem;
+	display: inline-block;
+	font-size: 1.2rem;
+}
+
+.boxes li {
+	text-align: center;
+}
+.mo-11{
+	display: none;
+}
+.boxes {
+	color: #666;
+	font-size: 1.5rem;
+}
+
+.day-box {
+	background-color: white;
+	border-radius: 30px;
+	padding: 1rem 0;
+	margin-top: -2rem;
+	box-shadow: 0 6px 5px -3px #f8f8f8;
+	position: relative;
+}
+
+.day-r {
+	color: red;
+}
+
+.sanjiao {
+	position: absolute;
+	top: -10px;
+	left: 48%;
+	height: 0;
+	width: 0;
+	/* background: #ff485e; */
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid white;
+}
+
+.day-b2 {
+	padding-top: 4rem;
+	background-color: white;
+}
+
+.day-b2 .boxes {
+	color: #ddd;
+}
+
+.today {
+	color: #333;
+}
+
+.bg {
+	margin-top: -1.9rem;
+	padding-bottom: 4rem;
+	background-color: white;
+}
+
+.d-price {
+	height: 2rem;
+	margin-bottom: 0;
+	margin-top: 0.2rem;
+	font-size: 1.2rem;
+}
+.day-col{
+	color: #333;
+}
+
+/*31hao*/
+
+.goday {
+	display: inline-block;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	line-height: 2.5rem;
+}
+.goda{
+	display: inline-block;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	line-height: 2.5rem;
+}
+ .day-active {
+ 	color: white;
+	background: linear-gradient(30deg, #ff1a62, #ff745a);
+	box-shadow: 0 6px 5px -3px rgba(255, 77, 119, .6);
+	-webkit-box-shadow: 0 6px 5px -3px rgba(255, 77, 119, .6);
+}
+.d-active{
+	color: #ff3660;
+}
+/*优惠活动*/
+.t-y {
+	padding: 12px 0;
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.t-y1 {
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff745a), to(#ff1a62));
+	color: transparent;
+	-webkit-background-clip: text;
+	font-size: 24px;
+	text-shadow: 1px 2px 6px rgba(255,77,119,.6);
+}
+
+.t-y2 {
+	color: #d2d2d2;
+	line-height: 27px;
+	font-size: 18px;
+}
+
+.t-y2 span {
+	color: #ff485e;
+	margin-right: 10px;
+}
+
+.tt-y {
+	padding: 12px 0 0 0;
+}
+
+.tt-y1 {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	color: #999;
+}
+
+.tt-y1 span {
+	font-size: 12px;
+	color: #37b1bf;
+	padding: 4px 4px;
+	display: inline-block;
+	border-radius: 18px;
+	border: 1px solid #79e2c1;
+	margin: 0 10px 0 3px;
+	box-sizing: border-box;
+	width: 80px;
+	text-align: center;
+	overflow: hidden;
+	vertical-align: middle;
+}
+.dis-bg{
+	margin-top: 2.5rem;
+	border-radius: 8px;
+	background-color: white;
+	padding: 0 1rem 1.2rem 1rem;
+	display: none;
+}
+.dis-bg2{
+	margin-top: 1.5rem;
+	border-radius: 8px;
+	background-color: white;
+	padding: 0 1rem 1.2rem 1rem;
+	margin-bottom: 10rem;
+	display: none;
+}
+
+
+/*出行人数*/
+.tt-y2{
+	font-size: 1.5rem;
+}
+.peo-1{
+	display: inline-block;
+	width: 1.8rem;
+	height: 1.8rem;
+	text-align: center;
+	line-height: 1.8rem;
+	background-color: #f7f7f7;
+	color: #d8d8d8;
+	border-radius:100% ;
+}
+.peo-2{
+	color: #ff3660;
+}
+.peo-0{
+	display: inline-block;
+	width: 1.8rem;
+	height: 1.8rem;
+	text-align: center;
+	line-height: 1.8rem;
+	background-color: #ffffff;
+	color: #d8d8d8;
+	border-radius:100% ;
+}
+/*加减*/
+.of-a {
+	padding:  0;
+}
+.of-remove {
+	margin-right: 1rem;
+	border-radius: 100%;
+	border: 1px solid #ccc;
+	padding: 0 0.3rem;
+}
+
+.of-add {
+	margin-right: 1rem;
+	border-radius: 100%;
+	border: 1px solid #ccc;
+	padding: 0 0.3rem;
+}
+
+.of-count {
+	margin-right: 1rem;
+}
+.of-a1 {
+	color: #cccccc;
+}
+
+.of-a2 {
+	color: #ff3a5f;
+}
+.tt-y3 .of-a .active {
+	color: #ff3a5f;
+	border-color: #ff3a5f;
+}
+.tt-y3 .of-a .m-act{
+	background: linear-gradient(to bottom,#FF7759,#FF2F60);
+    border: 1px solid transparent;
+    color: white;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+
+.tt-y3{
+	margin: 0.5rem;
+}
+/*底部*/
+.bottom-1{
+	background-color: white;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 0.2rem 1.5rem;
+	
+}
+.date-next{
+	color: white;
+	width: 11rem;
+	text-align: center;
+	padding: 0.9rem;
+	background-color: #ddd;
+	border-radius: 8px;
+}
+.p-choose{
+	display: inline-block;
+	padding: 0.8rem 0;
+	font-size: 1.4rem;
+	color: #999;
+}
+.bottom-2{
+	background-color: white;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 0.2rem 1.5rem;
+	display: none;
+}
+.date-c{
+	color: #ff3660;
+}
+.date-lei{
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	text-align: center;
+	border-radius: 50%;
+	line-height: 2rem;
+	color: white;
+	background: linear-gradient(30deg, #ff1a62, #ff745a);
+	box-shadow: 0 6px 5px -3px rgba(255, 77, 119, .6);
+	-webkit-box-shadow: 0 6px 5px -3px rgba(255, 77, 119, .6);
+}
+.date-next2{
+	color: white;
+	width: 11rem;
+	text-align: center;
+	padding: 0.9rem;
+	background: linear-gradient(30deg,#ff1a62,#ff745a);
+    box-shadow: 0 6px 5px -3px rgba(255,77,119,.6);
+    -webkit-box-shadow: 0 6px 5px -3px rgba(255,77,119,.6);
+	border-radius: 8px;
+}

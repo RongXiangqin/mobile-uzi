@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>swiper和tab相结合</title>
+		<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+
+		<body>
+			<style type="text/css">
+				#swiper-tab .swiper-slide {
+					line-height: 2 !important;
+					color: #666 !important;
+					font-size: 14px !important;
+					background: #eee !important;
+				}
+				
+				#swiper-tab .active-nav {
+					background: red !important;
+				}
+				/*tabs文字居中*/
+				
+				#swiper-tab {
+					text-align: center;
+				}
+				/*给con部分加上一个背景色*/
+				
+				#swiper-con {
+					background: yellow;
+					height: 300px;
+				}
+			</style>
+
+			<!--swiper-tab区域-->
+			<div class="swiper-container swiper-container-horizontal" id="swiper-tab" style="width:100%;">
+				<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+					<div class="swiper-slide active-nav" style="width: 30%;">版块1</div>
+					<div class="swiper-slide" style="width: 30%;">版块2</div>
+					<div class="swiper-slide" style="width: 30%;">版块3</div>
+					<div class="swiper-slide" style="width:30%;">版块4</div>
+					<div class="swiper-slide swiper-slide-prev" style="width: 30%;">版块5</div>
+					<div class="swiper-slide swiper-slide-visible swiper-slide-active" style="width: 30%;">版块6</div>
+					<div class="swiper-slide swiper-slide-visible swiper-slide-next" style="width: 30%;">版块7</div>
+					<div class="swiper-slide swiper-slide-visible" style="width: 30%;">版块8</div>
+				</div>
+			</div>
+			<!--swiper-tab区域-->
+
+			<!--swiper-con区域-->
+			<div class="swiper-container swiper-container-horizontal" id="swiper-con" style="width:100%;">
+				<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+					<div class="swiper-slide blue-slide" style="width: 100%;">slider1</div>
+					<div class="swiper-slide red-slide" style="width: 100%;">slider2</div>
+					<div class="swiper-slide orange-slide" style="width: 100%;">slider3</div>
+					<div class="swiper-slide blue-slide" style="width: 100%;">slider4</div>
+					<div class="swiper-slide red-slide" style="width: 100%;">slider5</div>
+					<div class="swiper-slide orange-slide" style="width: 100%;">slider6</div>
+					<div class="swiper-slide blue-slide swiper-slide-prev" style="width: 100%;">slider7</div>
+					<div class="swiper-slide red-slide swiper-slide-active" style="width: 100%;">slider8</div>
+				</div>
+			</div>
+			<!--swiper-con区域-->
+
+			<script>
+				var mySwiper2 = new Swiper('#swiper-tab', {
+					watchSlidesProgress: true, //
+					watchSlidesVisibility: true, //如果开启了watchSlidesVisibility，则会在每个可见slide增加一个classname，默认为'swiper-slide-visible'
+					slidesPerView: 3, //将tabs块儿平均分成几份
+
+					/*点击了上面的滑块时，下面的内容区也跟着变化  若去掉后，拖动下面上面可继续移动*/
+					onTap: function() {
+						mySwiper3.slideTo(mySwiper2.clickedIndex)
+					}
+
+				})
+				var mySwiper3 = new Swiper('#swiper-con', {
+
+					onSlideChangeStart: function() {
+						updateNavPosition()
+					}
+
+				})
+
+				function updateNavPosition() {
+					//默认哪一块是被选中的状态
+					$('#swiper-tab .active-nav').removeClass('active-nav')
+					var activeNav = $('#swiper-tab .swiper-slide').eq(mySwiper3.activeIndex).addClass('active-nav');
+
+					if(!activeNav.hasClass('swiper-slide-visible')) {
+						console.log(1);
+						if(activeNav.index() > mySwiper2.activeIndex) {
+							console.log(2);
+							var thumbsPerNav = Math.floor(mySwiper2.width / activeNav.width()) - 1
+							mySwiper2.slideTo(activeNav.index() - thumbsPerNav)
+						} else {
+							console.log(3);
+							mySwiper2.slideTo(activeNav.index())
+						}
+					}
+				}
+			</script>
+
+			<!--content-->
+
+		</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>我的订单</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<!--<link rel="icon" type="image/png" href="i/favicon.png">-->
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<!--<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<!--<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/myorder.css" />
+		<link rel="stylesheet" type="text/css" href="css/yzfonts.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	</head>
+
+	<body>
+		<!--顶部-->
+		<div class="top">
+			<!--返回-->
+			<div class="back1">
+				<a href="javascript:;" onClick="history.back();"><i class="am-icon-angle-left"></i></a>
+			</div>
+			<span>全部订单</span>
+
+		</div>
+		<!--我的订单-->
+		<div class="bg">
+
+			<div class="mo-title">
+				<b>我的订单</b>
+
+			</div>
+			<!--选项卡-->
+			<div class="order">
+				<span class="or-t1 active">最近3个月订单</span>
+				<span class="or-t2">3个月之前订单</span>
+			</div>
+			<div class="am-container">
+				<div class="order-box">
+					<div class="order-num">
+						订单号:<span class="o-num"> &nbsp; &nbsp;C04076960200 </span>
+						<span class="order-wait">等待付款</span>
+					</div>
+					<a href="detail.html">
+						<div class="detail">
+							<img class="mo-pic" src="img/myorder-1.jpg" />
+							<div class="pic-intro">
+								<日本_浪漫情怀_北海道小樽函馆浪漫5_6日>【网订日 多人多惠+买赠】2_3晚特色温泉，特色温泉，函馆山欣赏绚烂夜景，奥特莱斯，行程舒适轻松，畅享美景×1
+							</div>
+							<div style="clear: both;">
+
+							</div>
+						</div>
+
+					</a>
+					<div class="mo-add">
+						合计: <span class="mo-price"><b>￥8980</b></span>
+						<a href="pay.html">
+							<span class="gopay1">去支付</span>
+						</a>
+						<span class="gopay2">订单跟踪</span>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<!--<script src="js/jquery.min.js"></script>-->
+	<!--<![endif]-->
+	<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+	<script src="js/amazeui.min.js"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".or-t2").click(function() {
+				$(".order-box").css("display", "none");
+				$(this).addClass("active");
+				$(".or-t1").removeClass("active")
+			});
+			$(".or-t1").click(function() {
+				$(".order-box").css("display", "block");
+				$(this).addClass("active");
+				$(".or-t2").removeClass("active")
+			})
+		})
+	</script>
+
+</html>

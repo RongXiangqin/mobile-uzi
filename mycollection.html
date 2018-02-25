@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>我的收藏</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<!--<link rel="icon" type="image/png" href="i/favicon.png">-->
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<!--<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<!--<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/myorder.css" />
+		<link rel="stylesheet" type="text/css" href="css/yzfonts.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	</head>
+
+	<body>
+		<!--顶部-->
+		<div class="top">
+			<!--返回-->
+			<div class="back1">
+				<a href="javascript:;" onClick="history.back();"><i class="am-icon-angle-left"></i></a>
+			</div>
+			<span>我的收藏</span>
+
+		</div>
+		<!--我的订单-->
+		<div class="bg">
+
+			<div class="mo-title-2">
+				<b>我的收藏</b>
+
+			</div>
+
+			<div class="am-container" id="collection">
+				<div class="order-box-2" v-for="item in list">
+					<!--<div class="order-num">
+						产品编号:{{item.shopnum}}
+						<span class="order-wait">北京出发—跟团游</span>
+					</div>-->
+					<a :href="href+item._id">
+						<div class="detail-1">
+							<img class="mo-pic" :src="item.mdImg" />
+							<div class="pic-intro">
+								{{item.shopintro}}
+							</div>
+							<div style="clear: both;">
+
+							</div>
+						</div>
+
+					</a>
+					<div class="mo-add">
+						价格: <span class="mo-price"><b>￥{{item.pricereally}}</b></span>
+						<a :href="href+item._id">
+							<span class="gopay1">查看详情</span>
+						</a>
+						<!--<span class="gopay2">订单跟踪</span>-->
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<!--<script src="js/jquery.min.js"></script>-->
+	<!--<![endif]-->
+	<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+	<script src="js/amazeui.min.js"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#collection",
+			data: {
+				href: "../mobile/detail2.html?_id=",
+				list: [],
+				list2: []
+			},
+			mounted: function() {
+				var phone = sessionStorage.phone;
+
+				if(!phone) {
+					alert("请登录");
+					return;
+				}
+
+				$.get("/users/getCollection/?phone=" + phone, function(result) {
+					app.list2 = result.data;
+					for(var i = 0; i < app.list2.length; i++) {
+						var data = "&id="+app.list2[i].id;
+						$.get('/users/serCollection/', data, function(result2) {
+							if(result2.status) {
+								app.list=app.list.concat(result2.data);
+							}
+						});
+					}
+
+				});
+			}
+
+		})
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".or-t2").click(function() {
+				$(".order-box").css("display", "none");
+				$(this).addClass("active");
+				$(".or-t1").removeClass("active")
+			});
+			$(".or-t1").click(function() {
+				$(".order-box").css("display", "block");
+				$(this).addClass("active");
+				$(".or-t2").removeClass("active")
+			})
+		})
+	</script>
+
+</html>

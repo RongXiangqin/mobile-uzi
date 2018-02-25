@@ -1,0 +1,375 @@
+@charset "utf-8";
+/*字体图标*/
+@font-face {
+	font-family: 'iconfont';
+	src: url('../font-m/iconfont.eot');
+	src: url('../font-m/iconfont.eot?#iefix') format('embedded-opentype'), url('../font-m/iconfont.woff') format('woff'), url('../font-m/iconfont.ttf') format('truetype'), url('../font-m/iconfont.svg#iconfont') format('svg');
+}
+
+/*.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+	color: white;
+}*/
+/*@font-face {
+    font-family: iconfont;
+    src: url(//r03.uzaicdn.com/content/hybrid/fonts/login/iconfont.eot?t=1496647466887);
+    src: url(//r03.uzaicdn.com/content/hybrid/fonts/login/iconfont.eot?t=1496647466887#iefix) format("embedded-opentype"),url(//r03.uzaicdn.com/content/hybrid/fonts/login/iconfont.woff?t=1496647466887) format("woff"),url(//r03.uzaicdn.com/content/hybrid/fonts/login/iconfont.ttf?t=1496647466887) format("truetype"),url(//r03.uzaicdn.com/content/hybrid/fonts/login/iconfont.svg?t=1496647466887#iconfont) format("svg")
+}*/
+
+.iconfont {
+    font-family: iconfont!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-arrow-right:before {
+    content: "\e688"
+}
+
+.icon-close:before {
+    content: "\e632"
+}
+
+.icon-pingjiaguanli:before {
+    content: "\e69d"
+}
+
+.icon-wallet:before {
+    content: "\e664"
+}
+
+.icon-jifen:before {
+    content: "\e64e"
+}
+
+.icon-xinxi:before {
+    content: "\e62c"
+}
+
+.icon-dingdan:before {
+    content: "\e648"
+}
+
+.icon-ciqia01:before {
+    content: "\e62b"
+}
+
+.icon-youhuiquan:before {
+    content: "\e69b"
+}
+
+.icon-collection:before {
+    content: "\e60d"
+}
+
+.icon-ditu:before {
+    content: "\e602"
+}
+
+.icon-back:before {
+    content: "\e62d"
+}
+
+.icon-yanjing:before {
+    content: "\e656"
+}
+
+.icon-yuanquan:before {
+    content: "\e600"
+}
+
+.icon-shizhong:before {
+    content: "\e670"
+}
+
+.icon-zhongxin:before {
+    content: "\e637"
+}
+
+.icon-VIP:before {
+    content: "\e638"
+}
+
+.icon-zuojiantou:before {
+    content: "\e636"
+}
+
+.icon-biyan:before {
+    content: "\e60f"
+}
+
+.icon-baggage:before {
+    content: "\e60e"
+}
+
+.icon--:before {
+    content: "\e615"
+}
+
+.my-top{
+	background-repeat: no-repeat;
+    overflow: hidden;
+    height: 18rem;
+    width: 100%;
+    z-index: 999;
+    background-size: 100%;
+    background-image: url(../img/login-bg.jpg);
+	text-align: center;
+	
+}
+body{
+	background-color: #f7f7f7;
+}
+.mt-pic{
+	display: inline-block;
+	margin-top: 3rem;
+	width: 7rem;
+	height: 7rem;
+	overflow: hidden;
+	border-radius: 100%;
+	border: 3px solid #fe8490;
+	
+}
+.am-g a{
+	color: #333;
+}
+.my-pic-box{
+	position: relative;
+}
+.mt-pic img{
+	widows: 100%;
+}
+.myname{
+	color: white;
+	font-size: 2rem;
+}
+
+.myname2 {
+	color: white;
+	font-size: 2rem;
+	text-align: center;
+	background: #fe90a5;
+	border-radius: 30px;
+	width: 4rem;
+	padding: 0.4rem 2rem;
+}
+
+.my-center-1{
+	position: absolute;
+	bottom: 0;
+	left: 1rem;
+}
+.my-center-1 img{
+	width: 5rem;
+}
+.my-q-box{
+	padding: 1.5rem ;
+	margin: 1.1rem 0;
+	border-radius: 10px;
+	background-size: 100% 100%;
+	background-image: url(../img/my-bg1.png) ;
+}
+.my-q-box2{
+	padding: 1.5rem ;
+	margin: 1.1rem 0;
+	border-radius: 10px;
+	background-size: 100% 100%;
+	background-image: url(../img/my-bg2.png) ;
+}
+.my-q1{
+	margin-top: 0.5rem;
+}
+.my-q1 img{
+	width: 4rem;
+	
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+.my-q2 span{
+	color: #cccccc;
+}
+.am-list a{
+	color: #666;
+}
+.font-b{
+	font-size: 2.5rem;
+	line-height: 1rem;
+}
+.am-list .iconfont{
+	color: #666666;
+}
+.am-list-border>li>a, .am-list-bordered>li>a{
+	padding-left: 2rem;
+}
+.am-list{
+	margin-bottom: 10rem;
+}
+.am-list>li{
+	border: 0;
+	font-size: 1.3rem;
+}
+ul{
+	margin-top: 1rem;
+	
+}
+.vip{
+	font-size: 1.3rem;
+}
+/*.bottom {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	background-color: white;
+}
+
+.home-1 {
+	color: #cccccc;
+	font-size: 24px;
+}
+
+.home-key {
+	text-align: center;
+}
+
+.b-active {
+	background: -webkit-linear-gradient(top, #FE6C68, #FF2A64);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.home-2 {
+	color: white;
+	font-size: 30px;
+}
+
+.sign {
+	position: absolute;
+	left: 10px;
+	bottom: 35px;
+	display: inline-block;
+	height: 54px;
+	width: 54px;
+	border-radius: 100%;
+	background: -webkit-linear-gradient(top, #FE6C68, #FF2A64);
+	line-height: 54px;
+}
+
+.home-r {
+	position: relative;
+}
+
+.home-r {
+	margin-top: 39px;
+}
+.bottom a{
+	color: #333;
+}*/
+
+.bottom {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	background-color: white;
+}
+
+.home-1 {
+	color: #cccccc;
+	font-size: 26px;
+}
+
+.home-key {
+	text-align: center;
+}
+
+.b-active {
+	background: -webkit-linear-gradient(top, #FE6C68, #FF2A64);
+	-webkit-background-clip: text;
+	color: transparent;
+	text-shadow: 1px 2px 6px rgba(255,77,119,.6);
+}
+.b-active2 {
+	background: -webkit-linear-gradient(top, #FE6C68, #FF2A64);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+.home-2 {
+	color: white;
+	font-size: 30px;
+}
+
+.sign {
+	position: absolute;
+	left: 10px;
+	bottom: 35px;
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	background: -webkit-linear-gradient(top, #FE6C68, #FF2A64);
+	box-shadow: 1px 2px 6px rgba(255,77,119,.6);
+	line-height: 54px;
+}
+.sign .iconfont{
+	font-size: 2.7rem ;
+	color: white;
+}
+.home-r {
+	position: relative;
+}
+
+.home-r {
+	margin-top: 39px;
+}
+.bottom a{
+	color: #333;
+}
+.am-thumbnails>li{
+	    padding: 0 .5rem 0.2rem .5rem;
+}
+
+.my-top2 {
+	background-repeat: no-repeat;
+	overflow: hidden;
+	height: 18rem;
+	width: 100%;
+	z-index: 999;
+	background: linear-gradient(30deg, #fe476c, #fe5e6d);
+	text-align: center;
+}
+.my-top2 p{
+	margin-top: 1.6rem;
+}
+.mt-pic2 {
+	display: inline-block;
+	margin-top: 3rem;
+	width: 7rem;
+	height: 7rem;
+	overflow: hidden;
+	border-radius: 100%;
+	border: 4px solid #fe8490;
+}
+
+.am-g a {
+	color: #333;
+}
+.mt-pic2 img {
+	width: 100%;
+}

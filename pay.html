@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>支付</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<!--<link rel="icon" type="image/png" href="i/favicon.png">-->
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<!--<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<!--<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/pay.css" />
+		<link rel="stylesheet" type="text/css" href="css/yzfonts.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	</head>
+
+	<body>
+		<div id="box">
+
+			<!--顶部-->
+			<div class="top">
+				<div class="back1">
+					<a href="javascript:;" onClick="history.back();"><i class="iconfont icon-back"></i></a>
+				</div>
+				<span>2/2支付订单</span>
+				<!--联系-->
+				<div class="detail1 m-list">
+					<a href="#">
+						<i class="iconfont icon-telphone"></i>
+
+					</a>
+
+				</div>
+			</div>
+			<!--产品信息-->
+			<div class="am-container">
+				<div class="of-box1">
+					<div class="of-s">
+						<i class="iconfont icon-detail-info"></i>
+					</div>
+					<p>
+						{{list.shopintro}}</p>
+
+				</div>
+				<div class="of-stitle">
+					<i class="iconfont icon-money"></i> 应付总额：
+					<span class="pay-price">￥8980</span>
+					<span class="pay-detail fr">核对明细</span>
+				</div>
+			</div>
+			<!--支付方式-->
+			<div class="pay-way pay-more">
+				<div class="of-link-title fl">
+					<i class="iconfont icon-qianbao of-lt1"></i> 选择支付方式
+
+				</div>
+				<div class=" of-people-choice fr">
+					更换 <i class="iconfont icon-top of-det1"></i>
+					<i class="iconfont icon-bottom of-det2"></i>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!--选择方式-->
+			<div class="pay-way-c1">
+				<div class="of-link-title fl">
+					<img class="pay-1" src="img/bank-zhifubao.png" /> 支付宝手机支付
+
+				</div>
+				<div class=" of-people-choice fr">
+					<input class="radio1" type="radio" name="pay" id="" value="" />
+					<i class="iconfont icon-round pay-r1"></i>
+					<i class="iconfont icon-round-on active  pay-r2"></i>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="pay-way-c1">
+				<div class="of-link-title fl">
+					<img class="pay-1" src="img/bank-weixin.png" /> 微信支付
+
+				</div>
+				<div class=" of-people-choice fr">
+					<input class="radio1" type="radio" name="pay" id="" value="" />
+					<i class="iconfont icon-round pay-r1"></i>
+					<i class="iconfont icon-round-on active   pay-r2"></i>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="pay-way-c1">
+				<div class="of-link-title fl">
+					<img class="pay-1" src="img/quickunionpay-ico.png" /> 银联快捷支付
+
+				</div>
+				<div class=" of-people-choice fr">
+					<input class="radio1" type="radio" name="pay" id="" value="" />
+					<i class="iconfont icon-round pay-r1"></i>
+					<i class="iconfont icon-round-on active   pay-r2"></i>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="pay-way-c1">
+				<div class="of-link-title fl">
+					<img class="pay-1" src="img/pay-xindongka.png" /> 众信心动卡
+
+				</div>
+				<div class=" of-people-choice fr">
+					<input class="radio1" type="radio" name="pay" id="" value="" />
+					<i class="iconfont icon-round pay-r1"></i>
+					<i class="iconfont icon-round-on active   pay-r2"></i>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="pay-way-c1">
+				<div class="of-link-title fl">
+					<img class="pay-1" src="img/pay-bank-jiaotong.png" /> 交通银行信用卡快捷支付
+
+				</div>
+				<div class=" of-people-choice fr">
+					<input class="radio1" type="radio" name="pay" id="" value="" />
+					<i class="iconfont icon-round pay-r1"></i>
+					<i class="iconfont icon-round-on active   pay-r2"></i>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<!--优惠方案-->
+		<div class="pay-way2">
+			<div class="of-link-title">
+				<i class="iconfont icon-discount-m of-lt1"></i> 优惠方案
+
+			</div>
+
+		</div>
+		<div class="box">
+
+			<div class="pay-way3">
+
+				<div class="of-link-title2 fl">
+					优惠券
+
+				</div>
+				<a href="discount.html">
+					<div class=" of-people-choice2 fr">
+						未选择<i class="iconfont icon-right "></i>
+
+					</div>
+				</a>
+				<div class="clear"></div>
+			</div>
+			<div class="pay-way3">
+				<div class="of-link-title fl">
+					积分
+
+				</div>
+				<div class="of-link-b fl">
+					？
+
+				</div>
+				<div class=" of-people-choice2 fr">
+					您无可用积分
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<!--底部支付-->
+		<div class="bottom">
+			<div class="bottom-a">
+				<div class="bottom-x fl">
+					我已阅读并同意 <span>《团队出境旅游合同》</span>
+
+				</div>
+				<div class=" of-people-choice fr">
+					<input class="radio1" type="radio" name="sub" id="" value="" />
+					<i class="iconfont icon-round bottom-r1"></i>
+					<i class="iconfont icon-round-on active   bottom-r2"></i>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="pa-box">
+				<a href="mycenter.html">
+					<div class="bottom-pay">
+						立即支付
+					</div>
+				</a>
+			</div>
+
+		</div>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<!--<script src="js/jquery.min.js"></script>-->
+	<!--<![endif]-->
+	<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+	<script src="js/amazeui.min.js"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/axios.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#box",
+			data: {
+				href4: "../mobile/pay.html?_id=",
+				list: [],
+				list2: []
+			},
+			methods: {
+
+			},
+			mounted: function() {
+
+				//获取参数id
+				var id = GetRequest()._id;
+				//axios方法
+				//商品订单信息
+				axios.get('/users/getOrderForm/?id=' + id).then(function(response) {
+					app.list2 = response.data.data;
+					console.log(app.list2)
+					//商品详情信息
+					axios.get('/users/getGoodsById/?_id=' + id).then(function(response) {
+						app.list = response.data.data;
+						console.log(app.list)
+						var p1 = app.list.pricereally * app.list2.people;
+						var p2 = app.list.pricereally * 0.8 * app.list2.child;
+						var price = p1 + p2 + 2000;
+						console.log(p1 + p2)
+						$(".pay-price").text("￥" + price);
+					});
+				});
+
+			},
+
+		})
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".pay-r1").css("display", "inline");
+			$(".pay-r2").css("display", "none");
+			//			$(".pay-r2").eq(0).css("display", "inline");
+			//			$(".pay-r1").eq(0).css("display", "none");
+			$(".pay-way-c1").css("display", "none");
+			$(".pay-way-c1").eq(0).css("display", "none");
+			$("input[name='pay']").eq(0).prop("checked", true);
+
+			$(".pay-way-c1").click(function() {
+				$(".pay-way-c1").css("display", "none");
+				$(".pay-way-c1").removeClass("true")
+				$(this).css("display", "block");
+				$(this).addClass("true");
+
+				$(this).find("input[name='pay']").prop("checked", true);
+				$(".pay-r1").css("display", "inline");
+				$(".pay-r2").css("display", "none");
+				$(this).find(".pay-r2").css("display", "inline");
+				$(this).find(".pay-r1").css("display", "none");
+				a++;
+				$(".of-det1").css("display", "none");
+				$(".of-det2").css("display", "inline");
+			});
+
+			//
+			//			$("input[name='sex']").eq(1).prop("checked", true);
+			var a = 0;
+			$(".pay-more").click(function() {
+				a++;
+				if(a % 2 == 1) {
+					$(".of-det2").css("display", "none");
+					$(".of-det1").css("display", "inline");
+					$(".pay-way-c1").css("display", "block");
+				} else {
+					$(".of-det1").css("display", "none");
+					$(".of-det2").css("display", "inline");
+					$(".pay-way-c1").css("display", "none");
+					$(".true").css("display", "block");
+				}
+
+			});
+			//底部
+			$(".bottom-r1").click(function() {
+				$(this).css("display", "none");
+				$(".bottom-r2").css("display", "inline");
+				$(".bottom-pay").addClass("act");
+				$("input[name='sub']").prop("checked", true);
+			});
+			$(".bottom-r2").click(function() {
+				$(this).css("display", "none");
+				$(".bottom-r1").css("display", "inline");
+				$(".bottom-pay").removeClass("act");
+				$("input[name='sub']").prop("checked", false);
+			})
+
+		})
+	</script>
+
+</html>

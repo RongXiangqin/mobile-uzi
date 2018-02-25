@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>发现</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<!--<link rel="icon" type="image/png" href="i/favicon.png">-->
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<!--<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<!--<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">-->
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/find.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-shouye.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	</head>
+
+	<body>
+		<!--顶部-->
+		<div class="top">
+			<div class="back1">
+				<a href="javascript:;" onClick="history.back();"><i class="am-icon-angle-left"></i></a>
+			</div>
+			<span><img src="img/find.png"/></span>
+
+		</div>
+		<!--主体-->
+		<!--swiper-tab区域-->
+		<div class="swiper-container swiper-container-horizontal" id="swiper-tab">
+			<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+				<div class="swiper-slide active-nav tab-f1">
+					<div class="slide-bg">
+						
+					<img class="f-pic1" src="img/f-1.png" />
+					</div>
+				</div>
+				<div class="swiper-slide tab-f1">
+					<div class="slide-bg">
+						
+					<img class="f-pic1" src="img/f-2.png" />
+					</div>
+				</div>
+				<div class="swiper-slide tab-f1"><div class="slide-bg">
+						
+					<img class="f-pic1" src="img/f-3.png" />
+					</div>
+				</div>
+				<div class="swiper-slide tab-f1">
+					<div class="slide-bg">
+						
+					<img class="f-pic1" src="img/f-4.png" />
+					</div>
+				</div>
+				<div class="swiper-slide tab-f1 swiper-slide-prev">
+					<div class="slide-bg">
+						
+					<img class="f-pic1" src="img/f-5.png" />
+					</div>
+				</div>
+				<div class="swiper-slide tab-f1 swiper-slide-visible swiper-slide-active">
+					<div class="slide-bg">
+						
+					<img class="f-pic1" src="img/f-6.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--swiper-con区域-->
+		<div class="swiper-container swiper-container-horizontal" id="swiper-con">
+			<div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+				<div class="swiper-slide tab-f2 blue-slide">
+					<div class="f-box">
+						<img src="img/f-pic1.jpg" />
+						<p class="f-intro1">距北京2017公里的天空之镜</p>
+						<p class="f-c">
+							<span class="f-count"><i class="am-icon-star-o"></i>35</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span class="f-count"><i class="iconfont">&#xe6fd;</i>4183</span>
+
+						</p>
+						<p class="f-c"><span class="f-sign">热玩</span></p>
+					</div>
+					<div class="f-box">
+						<img src="img/f-pic2.jpg" />
+						<p class="f-intro1">五月人间</p>
+						<p class="f-c">
+							<span class="f-count"><i class="am-icon-star-o"></i>9</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span class="f-count"><i class="iconfont">&#xe6fd;</i>2658</span>
+
+						</p>
+						<p class="f-c"><span class="f-sign">热玩</span></p>
+					</div>
+					<div class="f-box">
+						<img src="img/f-pic3.jpg" />
+						<p class="f-intro1">关于旅行：美食の摄影</p>
+						<p class="f-c">
+							<span class="f-count"><i class="am-icon-star-o"></i>4</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span class="f-count"><i class="iconfont">&#xe6fd;</i>1581</span>
+
+						</p>
+						<p class="f-c"><span class="f-sign">热玩</span></p>
+					</div>
+					<div class="f-box">
+						<img src="img/f-pic4.jpg" />
+						<p class="f-intro1">一生中一定要看一次的悉尼灯光节</p>
+						<p class="f-c">
+							<span class="f-count"><i class="am-icon-star-o"></i>7</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span class="f-count"><i class="iconfont">&#xe6fd;</i>1907</span>
+
+						</p>
+						<p class="f-c"><span class="f-sign">热玩</span></p>
+					</div>
+					<div class="f-box">
+						<img src="img/f-pic5.jpg" />
+						<p class="f-intro1">泼水节“主战场”全攻略！</p>
+						<p class="f-c">
+							<span class="f-count"><i class="am-icon-star-o"></i>10</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span class="f-count"><i class="iconfont">&#xe6fd;</i>1592</span>
+
+						</p>
+						<p class="f-c"><span class="f-sign">热玩</span></p>
+					</div>
+					<div class="f-box">
+						<img src="img/f-pic6.jpg" />
+						<p class="f-intro1">泰国万人湿身大狂欢又要开始啦！</p>
+						<p class="f-c">
+							<span class="f-count"><i class="am-icon-star-o"></i>3</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span class="f-count"><i class="iconfont">&#xe6fd;</i>1529</span>
+
+						</p>
+						<p class="f-c"><span class="f-sign">热玩</span></p>
+					</div>
+					<div class="f-box">
+						<img src="img/f-pic7.jpg" />
+						<p class="f-intro1">灼灼樱色，十里河津</p>
+						<p class="f-c">
+							<span class="f-count"><i class="am-icon-star-o"></i>2</span>&nbsp;&nbsp;&nbsp;&nbsp;
+							<span class="f-count"><i class="iconfont">&#xe6fd;</i>1878</span>
+
+						</p>
+						<p class="f-c"><span class="f-sign">热玩</span></p>
+					</div>
+
+				</div>
+				<div class="swiper-slide tab-f2 red-slide">
+					<!--选项卡-->
+					<div class="am-tabs" data-am-tabs>
+						<ul class="am-tabs-nav am-nav am-nav-tabs">
+							<li class="am-active">
+								<a href="#tab1"><span>人气</span></a>
+							</li>
+							<li>
+								<a href="#tab2"><span>最新</span></a>
+							</li>
+
+						</ul>
+
+						<div class="am-tabs-bd">
+							<div class="am-tab-panel am-fade am-in am-active" id="tab1">
+								<div class="f-box">
+									<img src="img/f-pic6.jpg" />
+									<p class="f-intro1">距北京2017公里的天空之镜</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>35</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>4183</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic5.jpg" />
+									<p class="f-intro1">五月人间</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>9</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>2658</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic4.jpg" />
+									<p class="f-intro1">关于旅行：美食の摄影</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>4</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1581</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic3.jpg" />
+									<p class="f-intro1">一生中一定要看一次的悉尼灯光节</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>7</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1907</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic2.jpg" />
+									<p class="f-intro1">泼水节“主战场”全攻略！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>10</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1592</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic6.jpg" />
+									<p class="f-intro1">泰国万人湿身大狂欢又要开始啦！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>3</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1529</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic7.jpg" />
+									<p class="f-intro1">灼灼樱色，十里河津</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>2</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1878</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+							</div>
+							<div class="am-tab-panel am-fade" id="tab2">
+								<div class="f-box">
+									<img src="img/f-pic4.jpg" />
+									<p class="f-intro1">距北京2017公里的天空之镜</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>35</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>4183</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic3.jpg" />
+									<p class="f-intro1">五月人间</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>9</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>2658</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic5.jpg" />
+									<p class="f-intro1">关于旅行：美食の摄影</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>4</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1581</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic2.jpg" />
+									<p class="f-intro1">一生中一定要看一次的悉尼灯光节</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>7</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1907</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic7.jpg" />
+									<p class="f-intro1">泼水节“主战场”全攻略！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>10</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1592</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic1.jpg" />
+									<p class="f-intro1">泰国万人湿身大狂欢又要开始啦！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>3</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1529</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic6.jpg" />
+									<p class="f-intro1">灼灼樱色，十里河津</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>2</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1878</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide tab-f2 orange-slide">
+					<div class="am-tabs" data-am-tabs>
+						<ul class="am-tabs-nav am-nav am-nav-tabs">
+							<li class="am-active">
+								<a href="#tab1"><span>人气</span></a>
+							</li>
+							<li>
+								<a href="#tab2"><span>最新</span></a>
+							</li>
+
+						</ul>
+
+						<div class="am-tabs-bd">
+							<div class="am-tab-panel am-fade am-in am-active" id="tab1">
+								<div class="f-box">
+									<img src="img/f-pic4.jpg" />
+									<p class="f-intro1">距北京2017公里的天空之镜</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>35</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>4183</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic6.jpg" />
+									<p class="f-intro1">五月人间</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>9</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>2658</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic5.jpg" />
+									<p class="f-intro1">关于旅行：美食の摄影</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>4</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1581</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic4.jpg" />
+									<p class="f-intro1">一生中一定要看一次的悉尼灯光节</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>7</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1907</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic2.jpg" />
+									<p class="f-intro1">泼水节“主战场”全攻略！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>10</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1592</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic3.jpg" />
+									<p class="f-intro1">泰国万人湿身大狂欢又要开始啦！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>3</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1529</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic1.jpg" />
+									<p class="f-intro1">灼灼樱色，十里河津</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>2</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1878</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+							</div>
+							<div class="am-tab-panel am-fade" id="tab2">
+								<div class="f-box">
+									<img src="img/f-pic2.jpg" />
+									<p class="f-intro1">距北京2017公里的天空之镜</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>35</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>4183</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic4.jpg" />
+									<p class="f-intro1">五月人间</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>9</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>2658</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic1.jpg" />
+									<p class="f-intro1">关于旅行：美食の摄影</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>4</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1581</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic6.jpg" />
+									<p class="f-intro1">一生中一定要看一次的悉尼灯光节</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>7</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1907</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic5.jpg" />
+									<p class="f-intro1">泼水节“主战场”全攻略！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>10</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1592</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic6.jpg" />
+									<p class="f-intro1">泰国万人湿身大狂欢又要开始啦！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>3</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1529</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic7.jpg" />
+									<p class="f-intro1">灼灼樱色，十里河津</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>2</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1878</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide tab-f2 blue-slide">
+					<div class="am-tabs" data-am-tabs>
+						<ul class="am-tabs-nav am-nav am-nav-tabs">
+							<li class="am-active">
+								<a href="#tab1"><span>人气</span></a>
+							</li>
+							<li>
+								<a href="#tab2"><span>最新</span></a>
+							</li>
+
+						</ul>
+
+						<div class="am-tabs-bd">
+							<div class="am-tab-panel am-fade am-in am-active" id="tab1">
+								<div class="f-box">
+									<img src="img/f-pic7.jpg" />
+									<p class="f-intro1">距北京2017公里的天空之镜</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>35</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>4183</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic6.jpg" />
+									<p class="f-intro1">五月人间</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>9</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>2658</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic5.jpg" />
+									<p class="f-intro1">关于旅行：美食の摄影</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>4</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1581</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic4.jpg" />
+									<p class="f-intro1">一生中一定要看一次的悉尼灯光节</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>7</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1907</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic3.jpg" />
+									<p class="f-intro1">泼水节“主战场”全攻略！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>10</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1592</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic2.jpg" />
+									<p class="f-intro1">泰国万人湿身大狂欢又要开始啦！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>3</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1529</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic1.jpg" />
+									<p class="f-intro1">灼灼樱色，十里河津</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>2</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1878</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+							</div>
+							<div class="am-tab-panel am-fade" id="tab2">
+								<div class="f-box">
+									<img src="img/f-pic4.jpg" />
+									<p class="f-intro1">距北京2017公里的天空之镜</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>35</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>4183</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic3.jpg" />
+									<p class="f-intro1">五月人间</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>9</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>2658</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic5.jpg" />
+									<p class="f-intro1">关于旅行：美食の摄影</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>4</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1581</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic2.jpg" />
+									<p class="f-intro1">一生中一定要看一次的悉尼灯光节</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>7</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1907</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic1.jpg" />
+									<p class="f-intro1">泼水节“主战场”全攻略！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>10</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1592</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic7.jpg" />
+									<p class="f-intro1">泰国万人湿身大狂欢又要开始啦！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>3</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1529</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic6.jpg" />
+									<p class="f-intro1">灼灼樱色，十里河津</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>2</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1878</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide tab-f2 red-slide">
+					<div class="am-tabs" data-am-tabs>
+						<ul class="am-tabs-nav am-nav am-nav-tabs">
+							<li class="am-active">
+								<a href="#tab1"><span>人气</span></a>
+							</li>
+							<li>
+								<a href="#tab2"><span>最新</span></a>
+							</li>
+
+						</ul>
+
+						<div class="am-tabs-bd">
+							<div class="am-tab-panel am-fade am-in am-active" id="tab1">
+								<div class="f-box">
+									<img src="img/f-pic5.jpg" />
+									<p class="f-intro1">距北京2017公里的天空之镜</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>35</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>4183</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic6.jpg" />
+									<p class="f-intro1">五月人间</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>9</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>2658</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic4.jpg" />
+									<p class="f-intro1">关于旅行：美食の摄影</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>4</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1581</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic2.jpg" />
+									<p class="f-intro1">一生中一定要看一次的悉尼灯光节</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>7</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1907</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic3.jpg" />
+									<p class="f-intro1">泼水节“主战场”全攻略！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>10</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1592</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic4.jpg" />
+									<p class="f-intro1">泰国万人湿身大狂欢又要开始啦！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>3</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1529</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic1.jpg" />
+									<p class="f-intro1">灼灼樱色，十里河津</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>2</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1878</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+							</div>
+							<div class="am-tab-panel am-fade" id="tab2">
+								<div class="f-box">
+									<img src="img/f-pic2.jpg" />
+									<p class="f-intro1">距北京2017公里的天空之镜</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>35</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>4183</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic4.jpg" />
+									<p class="f-intro1">五月人间</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>9</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>2658</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic6.jpg" />
+									<p class="f-intro1">关于旅行：美食の摄影</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>4</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1581</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic5.jpg" />
+									<p class="f-intro1">一生中一定要看一次的悉尼灯光节</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>7</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1907</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic3.jpg" />
+									<p class="f-intro1">泼水节“主战场”全攻略！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>10</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1592</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic2.jpg" />
+									<p class="f-intro1">泰国万人湿身大狂欢又要开始啦！</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>3</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1529</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+								<div class="f-box">
+									<img src="img/f-pic1.jpg" />
+									<p class="f-intro1">灼灼樱色，十里河津</p>
+									<p class="f-c">
+										<span class="f-count"><i class="am-icon-star-o"></i>2</span>&nbsp;&nbsp;&nbsp;&nbsp;
+										<span class="f-count"><i class="iconfont">&#xe6fd;</i>1878</span>
+
+									</p>
+									<p class="f-c"><span class="f-sign">热玩</span></p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide tab-f2 orange-slide">
+					<div class="f-activity">
+						暂无数据
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		<!--底部导航栏-->
+		<div class="bottom">
+			<ul class="am-avg-sm-5 am-thumbnails">
+				<li>
+					<a href="index.html">
+						<div class="home-key">
+							<div>
+								<i class="iconfont icon-comfooter-shouye home-1"></i>
+							</div>
+
+							首页
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="vans.html">
+						<div class="home-key">
+							<div>
+								<i class="iconfont icon-comfooter-temai home-1 "></i>
+							</div>
+
+							<span >特卖会</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="destination.html">
+						<div class="home-key home-r">
+							<div class="sign">
+								<i class="iconfont icon-dizhi"></i>
+							</div>
+
+							<span >目的地</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="find.html">
+						<div class="home-key">
+							<div>
+								<i class="iconfont icon-comfooter-faxian home-1 b-active"></i>
+							</div>
+
+							<span class="b-active2">发现</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="mycenter.html">
+						<div class="home-key">
+							<div>
+								<i class="iconfont icon-comfooter-wode home-1"></i>
+							</div>
+
+							我的
+						</div>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--[if (gte IE 9)|!(IE)]><!-->
+	<!--<script src="js/jquery.min.js"></script>-->
+	<!--<![endif]-->
+	<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+	<script src="js/amazeui.min.js"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		var mySwiper2 = new Swiper('#swiper-tab', {
+			watchSlidesProgress: true, //
+			watchSlidesVisibility: true, //如果开启了watchSlidesVisibility，则会在每个可见slide增加一个classname，默认为'swiper-slide-visible'
+			slidesPerView: 3, //将tabs块儿平均分成几份
+
+			/*点击了上面的滑块时，下面的内容区也跟着变化  若去掉后，拖动下面上面可继续移动*/
+			onTap: function() {
+				mySwiper3.slideTo(mySwiper2.clickedIndex)
+			}
+
+		})
+		var mySwiper3 = new Swiper('#swiper-con', {
+
+			onSlideChangeStart: function() {
+				updateNavPosition()
+			}
+
+		})
+
+		function updateNavPosition() {
+			//默认哪一块是被选中的状态
+			$('#swiper-tab .active-nav').removeClass('active-nav')
+			var activeNav = $('#swiper-tab .swiper-slide').eq(mySwiper3.activeIndex).addClass('active-nav');
+
+			if(!activeNav.hasClass('swiper-slide-visible')) {
+				console.log(1);
+				if(activeNav.index() > mySwiper2.activeIndex) {
+					console.log(2);
+					var thumbsPerNav = Math.floor(mySwiper2.width / activeNav.width()) - 1
+					mySwiper2.slideTo(activeNav.index() - thumbsPerNav)
+				} else {
+					console.log(3);
+					mySwiper2.slideTo(activeNav.index())
+				}
+			}
+		}
+
+		//滑动图的高度
+		var b = $(".f-pic1").height() + 22;
+		console.log(b);
+		$("#swiper-tab").css("height", b);
+		$("#swiper-con").css("margin-top", b + 48);
+		$("#swiper-con img").click(function () {
+			location.href="detail.html"
+		})
+	</script>
+
+</html>

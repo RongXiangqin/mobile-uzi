@@ -1,0 +1,77 @@
+@charset "utf-8";
+@font-face {
+	font-family: 'iconfont';
+	src: url('../font-shouye/iconfont.eot');
+	src: url('../font-shouye/iconfont.eot?#iefix') format('embedded-opentype'), 
+	url('../font-shouye/iconfont.woff') format('woff'), 
+	url('../font-shouye/iconfont.ttf') format('truetype'), 
+	url('../font-shouye/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: iconfont!important;
+   /* font-size: 16px;*/
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-saomiao:before {
+    content: "\e6b4"
+}
+
+.icon-muzhiguanwangappxiazai:before {
+    content: "\e603"
+}
+
+.icon-telphone:before {
+    content: "\e602"
+}
+
+.icon-back:before {
+    content: "\e61b"
+}
+
+.icon-dizhi:before {
+    content: "\e601"
+}
+
+.icon-miaoshaxuanzhong:before {
+    content: "\e8c2"
+}
+
+.icon-sousuo-sousuo:before {
+    content: "\e600"
+}
+
+.icon-wode:before {
+    content: "\e642"
+}
+
+.icon-lianxidianzhu:before {
+    content: "\e643"
+}
+
+.icon-shouye:before {
+    content: "\e644"
+}
+
+.icon-comfooter-temai:before {
+    content: "\e63d"
+}
+
+.icon-comfooter-faxian:before {
+    content: "\e63e"
+}
+
+.icon-comfooter-wode:before {
+    content: "\e63f"
+}
+
+.icon-comfooter-mudedi:before {
+    content: "\e640"
+}
+
+.icon-comfooter-shouye:before {
+    content: "\e641"
+}
